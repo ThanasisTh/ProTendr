@@ -1,62 +1,39 @@
-// One-off diagnostic: probe the real POST /notice endpoint to learn the
-// actual response item shape (the OpenAPI spec only says "content: object[]",
-// Swagger couldn't infer the concrete type) and to confirm the CPV code
-// format the API actually accepts. Delete this file once the real fetch
-// script is built and confirmed working.
+// One-off diagnostic: the CPV check digit (the "-N" suffix KIMDIS requires)
+// has no reliable public lookup - even the EU's own published check-digit
+// formula is known-broken (fails on ~98% of codes per OP-TED/ePO#589). So
+// brute-force all 10 digits per 8-digit code against the real API and see
+// which one actually returns matches; a wrong digit should return zero
+// since it doesn't correspond to any notice's real CPV key.
 
 const BASE = "https://cerpp.eprocurement.gov.gr/khmdhs-opendata";
 
-function fmtDate(d) {
-  return d.toISOString().slice(0, 10);
-}
+const CODES = ["72000000", "72200000", "72212000", "72224000", "72413000", "72316000"];
 
 const today = new Date();
-const monthAgo = new Date(today);
-monthAgo.setUTCDate(monthAgo.getUTCDate() - 30);
+const sixMonthsAgo = new Date(today);
+sixMonthsAgo.setUTCMonth(sixMonthsAgo.getUTCMonth() - 6);
+const dateFrom = sixMonthsAgo.toISOString().slice(0, 10);
+const dateTo = today.toISOString().slice(0, 10);
 
-const attempts = [
-  {
-    label: "bare 8-digit CPV",
-    body: { cpvItems: ["72000000"], dateFrom: fmtDate(monthAgo), dateTo: fmtDate(today) },
-  },
-  {
-    label: "CPV with check digit",
-    body: { cpvItems: ["72000000-5"], dateFrom: fmtDate(monthAgo), dateTo: fmtDate(today) },
-  },
-  {
-    label: "no cpv filter, date range only",
-    body: { dateFrom: fmtDate(monthAgo), dateTo: fmtDate(today) },
-  },
-];
-
-for (const { label, body } of attempts) {
-  const url = `${BASE}/notice?page=0&size=3`;
-  console.log(`\n=== POST /notice (${label}) ===`);
-  console.log("request body:", JSON.stringify(body));
-  try {
-    const res = await fetch(url, {
+for (const code of CODES) {
+  console.log(`\n=== ${code} ===`);
+  for (let digit = 0; digit <= 9; digit++) {
+    const cpv = `${code}-${digit}`;
+    const res = await fetch(`${BASE}/notice?page=0&size=1`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Accept: "application/json" },
-      body: JSON.stringify(body),
+      body: JSON.stringify({ cpvItems: [cpv], dateFrom, dateTo }),
     });
-    const text = await res.text();
-    console.log(`status: ${res.status}`);
-    let json = null;
-    try {
-      json = JSON.parse(text);
-    } catch {
-      console.log("non-JSON body (first 800 chars):", text.slice(0, 800));
+    if (!res.ok) {
+      console.log(`  ${cpv}: HTTP ${res.status}`);
       continue;
     }
-    if (res.ok) {
-      console.log(`totalElements: ${json.totalElements}, content length: ${json.content?.length}`);
-      if (json.content?.[0]) {
-        console.log("first content item:", JSON.stringify(json.content[0], null, 2));
-      }
+    const json = await res.json();
+    if (json.totalElements > 0) {
+      console.log(`  ${cpv}: totalElements=${json.totalElements}  <-- MATCH`);
+      console.log(`    sample title: ${json.content?.[0]?.title}`);
     } else {
-      console.log("error body:", JSON.stringify(json, null, 2));
+      console.log(`  ${cpv}: 0`);
     }
-  } catch (err) {
-    console.log(`fetch error: ${err.message}`);
   }
 }
