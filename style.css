@@ -8,6 +8,8 @@
   --new-bg: #fff8dd;
   --stale-bg: #fdeaea;
   --stale-fg: #a12727;
+  --card-bg: #f7f8fa;
+  --tag-bg: #eef1f6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,6 +22,8 @@
     --new-bg: #2e2a12;
     --stale-bg: #3a1f1f;
     --stale-fg: #e08080;
+    --card-bg: #1a1d24;
+    --tag-bg: #232733;
   }
 }
 
@@ -50,19 +54,28 @@ header h1 { margin-bottom: 0.1rem; }
 
 .controls input[type="search"] {
   flex: 1 1 240px;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  background: var(--bg);
-  color: var(--fg);
 }
 
-.controls select {
-  padding: 0.5rem 0.75rem;
+.controls input[type="search"],
+.controls select,
+.value-range input {
+  padding: 0.55rem 0.75rem;
   border: 1px solid var(--border);
   border-radius: 6px;
   background: var(--bg);
   color: var(--fg);
+  font-size: 0.95rem;
+}
+
+.value-range {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--muted);
+}
+
+.value-range input {
+  width: 6.5rem;
 }
 
 .hide-seen {
@@ -74,14 +87,23 @@ header h1 { margin-bottom: 0.1rem; }
   white-space: nowrap;
 }
 
+.hide-seen input { width: 1.1rem; height: 1.1rem; }
+
+.reset {
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--muted);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.reset:hover { color: var(--fg); border-color: var(--accent); }
+
 table {
   width: 100%;
   border-collapse: collapse;
-  overflow-x: auto;
-  display: block;
 }
-
-thead, tbody { display: table; width: 100%; table-layout: fixed; }
 
 th, td {
   text-align: left;
@@ -98,6 +120,17 @@ tr.is-new td { background: var(--new-bg); }
 td a { color: var(--accent); text-decoration: none; }
 td a:hover { text-decoration: underline; }
 
+.source-tag {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 4px;
+  background: var(--tag-bg);
+  color: var(--muted);
+  font-size: 0.7rem;
+  vertical-align: middle;
+}
+
 .deadline-soon { color: var(--stale-fg); font-weight: 600; }
 
 .empty { color: var(--muted); text-align: center; padding: 2rem 0; }
@@ -111,3 +144,59 @@ footer {
 }
 
 footer a { color: var(--accent); }
+
+/* Below this width the table collapses into a stack of cards: each row
+   becomes a bordered block, each cell becomes a labeled line (label from
+   the td's data-label attribute), and the header row is hidden since the
+   labels replace it. */
+@media (max-width: 700px) {
+  body { padding: 1rem 1rem 2.5rem; }
+
+  .controls { flex-direction: column; align-items: stretch; }
+  .controls input[type="search"],
+  .controls select,
+  .value-range,
+  .reset {
+    width: 100%;
+  }
+  .value-range input { flex: 1 1 0; width: auto; }
+  .hide-seen { padding: 0.25rem 0; }
+
+  table, thead, tbody, th, td, tr { display: block; }
+  thead { position: absolute; left: -9999px; }
+
+  tbody tr {
+    margin-bottom: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    background: var(--card-bg);
+  }
+
+  td {
+    border-bottom: none;
+    padding: 0.3rem 0;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  td::before {
+    content: attr(data-label);
+    color: var(--muted);
+    font-size: 0.75rem;
+    flex: 0 0 auto;
+  }
+
+  td[data-label=""] { justify-content: flex-end; padding-bottom: 0; }
+  td[data-label=""]::before { content: none; }
+
+  td[data-label="Title"] {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+  }
+  td[data-label="Title"]::before { display: none; }
+  td[data-label="Title"] a { font-weight: 600; }
+}

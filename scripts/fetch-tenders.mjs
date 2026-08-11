@@ -173,15 +173,16 @@ function normalizeKimdisNotice(raw) {
   const currency = raw.objectDetails?.[0]?.currency?.key ?? "EUR";
   const value = raw.totalCostWithVAT ?? raw.totalCostWithoutVAT ?? null;
 
-  // No confirmed public deep-link URL pattern for a KIMDIS notice detail
-  // page (unlike TED, which documents one) - show the ΑΔΑΜ reference
-  // number in the title instead so it stays searchable on promitheus.gov.gr.
-  const title = raw.referenceNumber ? `${raw.title} [${raw.referenceNumber}]` : raw.title;
+  // Confirmed empirically (unprotected/public, returns the notice content,
+  // no login): https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=<ADAM>
+  const url = raw.referenceNumber
+    ? `https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=${raw.referenceNumber}`
+    : null;
 
   return {
     id: `KIMDIS-${raw.referenceNumber}`,
     source: "KIMDIS",
-    title,
+    title: raw.title,
     buyer: raw.organization?.value ?? null,
     buyerCountry: raw.nutsCountry?.key ?? "GR",
     cpv: [...cpvSet],
@@ -189,7 +190,7 @@ function normalizeKimdisNotice(raw) {
     currency,
     deadline: toDateString(raw.finalSubmissionDate),
     publicationDate: toDateString(raw.submissionDate),
-    url: null,
+    url,
   };
 }
 

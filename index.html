@@ -15,15 +15,38 @@
 
   <section class="controls">
     <input id="search" type="search" placeholder="Search title or buyer…" />
+
     <select id="sort">
-      <option value="deadline">Sort: deadline (soonest first)</option>
-      <option value="published">Sort: published (newest first)</option>
-      <option value="value">Sort: value (highest first)</option>
+      <option value="deadline-asc">Deadline: soonest first</option>
+      <option value="deadline-desc">Deadline: latest first</option>
+      <option value="published-desc">Published: newest first</option>
+      <option value="published-asc">Published: oldest first</option>
+      <option value="value-desc">Value: highest first</option>
+      <option value="value-asc">Value: lowest first</option>
     </select>
+
+    <select id="source">
+      <option value="">All sources</option>
+      <option value="TED">TED only</option>
+      <option value="KIMDIS">KIMDIS only</option>
+    </select>
+
+    <select id="cpv">
+      <option value="">All CPV codes</option>
+    </select>
+
+    <div class="value-range">
+      <input id="minValue" type="number" inputmode="numeric" placeholder="Min €" min="0" />
+      <span>–</span>
+      <input id="maxValue" type="number" inputmode="numeric" placeholder="Max €" min="0" />
+    </div>
+
     <label class="hide-seen">
       <input id="hideSeen" type="checkbox" />
       Hide already-seen
     </label>
+
+    <button id="resetFilters" type="button" class="reset">Reset filters</button>
   </section>
 
   <main>
@@ -45,7 +68,8 @@
   </main>
 
   <footer>
-    <p>Source: <a href="https://docs.ted.europa.eu/api/latest/" target="_blank" rel="noopener">TED Search API</a>.
+    <p>Sources: <a href="https://docs.ted.europa.eu/api/latest/" target="_blank" rel="noopener">TED Search API</a>
+       and <a href="https://cerpp.eprocurement.gov.gr/khmdhs-opendata/swagger-ui/index.html" target="_blank" rel="noopener">KIMDIS Open Data API</a>.
        Watch list is <a href="config/watch.json" target="_blank" rel="noopener">config/watch.json</a>.
        Data refreshed on a schedule by GitHub Actions &mdash; see <a href="https://github.com/thanasisth/protendr" target="_blank" rel="noopener">source</a>.</p>
   </footer>

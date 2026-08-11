@@ -23,7 +23,7 @@ Nothing here has a running cost: GitHub Actions minutes and GitHub Pages hosting
 ## Setup (one-time)
 
 1. **Enable GitHub Pages** — repo Settings → Pages → Source: "Deploy from a branch" → Branch: `main`, folder `/ (root)`. This is a manual toggle; it isn't something a push can do.
-2. **Run the poller once manually** — Actions tab → "Poll TED tenders" → Run workflow. This populates `data/tenders.json` for the first time instead of waiting for the next scheduled run.
+2. **Run the poller once manually** — Actions tab → "Poll tenders" → Run workflow. This populates `data/tenders.json` for the first time instead of waiting for the next scheduled run.
 3. Visit the Pages URL GitHub gives you (Settings → Pages, once step 1 is saved).
 
 ## Editing what it watches
@@ -32,9 +32,16 @@ Edit `config/watch.json` — CPV codes, buyer country, lookback window — and p
 
 Current defaults watch Greek buyers for IT/software/data-services CPV codes, as a starting point for scouting projects rather than construction/trade work.
 
+## Filtering and sorting on the page
+
+- Free-text search over title/buyer, source (TED/KIMDIS), CPV code (dropdown built from `config/watch.json` at load time), and a value range (min/max €).
+- Sort by deadline or published date (either direction) or value — including lowest-value-first, useful for surfacing smaller jobs that a solo dev might actually take on rather than the multi-million-euro framework contracts that dominate by value.
+- "Hide already-seen" combines with everything else; "Reset filters" clears all of it back to the default (soonest deadline first).
+- The table becomes a stack of cards below ~700px so it's usable on a phone.
+
 ## Known limitations of this prototype
 
 - **No document extraction.** Only notice-level metadata (title, buyer, CPV, value, deadline) is shown — not what's actually being asked for inside the tender documents. That's the moat for a real product, intentionally cut here.
-- **KIMDIS notices have no direct detail link.** Unlike TED, there's no confirmed public deep-link URL pattern for a single KIMDIS notice, so its title carries the ΑΔΑΜ reference number (e.g. `[26PROC019601876]`) for manual lookup on promitheus.gov.gr instead of a clickable link.
 - **KIMDIS is queried one CPV code at a time.** The `cpvItems` field in its search API accepts an array, but whether that means OR or AND isn't documented or confirmed, so each watched code gets its own request rather than relying on unverified array semantics.
+- **Notice-level noise.** The broadest watched codes (`72000000`, `72224000`) also ride along on large multi-code notices that aren't really programming work (hardware procurement, audits, construction, generic consulting) — see the `_noiseNote` in `config/watch.json`. Filtering by a narrower CPV code or a lower value range on the page cuts most of this out.
 - **Polling cadence is 6h**, not real-time — fine for browsing, not for competing on being first to see a notice.
