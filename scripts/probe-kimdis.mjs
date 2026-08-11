@@ -8,8 +8,9 @@
 const BASE = "https://cerpp.eprocurement.gov.gr/khmdhs-opendata";
 
 const candidates = [
-  { method: "GET", url: `${BASE}/help` },
   { method: "GET", url: `${BASE}/v3/api-docs` },
+  { method: "GET", url: `${BASE}/swagger-ui/index.html` },
+  { method: "GET", url: `${BASE}/help` },
   { method: "GET", url: `${BASE}/swagger.json` },
   { method: "GET", url: `${BASE}/api-docs` },
   { method: "GET", url: `${BASE}/swagger/v1/swagger.json` },
@@ -23,7 +24,33 @@ for (const { method, url } of candidates) {
     const text = await res.text();
     console.log(`status: ${res.status}`);
     console.log(`content-type: ${res.headers.get("content-type")}`);
-    console.log(`body (first 1500 chars):\n${text.slice(0, 1500)}`);
+
+    // An OpenAPI spec is huge; summarize it (paths + params) instead of
+    // dumping raw JSON so the useful part isn't buried or truncated.
+    let asJson = null;
+    try {
+      asJson = JSON.parse(text);
+    } catch {
+      // not JSON, fall through to raw snippet
+    }
+
+    if (asJson?.paths) {
+      console.log("OpenAPI spec detected. Paths:");
+      for (const [p, methods] of Object.entries(asJson.paths)) {
+        for (const [verb, def] of Object.entries(methods)) {
+          const params = (def.parameters ?? []).map((x) => x.name).join(", ");
+          const bodySchema = def.requestBody
+            ? JSON.stringify(def.requestBody.content ?? {}).slice(0, 300)
+            : "";
+          console.log(`  ${verb.toUpperCase()} ${p} | params: [${params}] | body: ${bodySchema}`);
+        }
+      }
+      if (asJson.components?.schemas) {
+        console.log("Schema names:", Object.keys(asJson.components.schemas).join(", "));
+      }
+    } else {
+      console.log(`body (first 1500 chars):\n${text.slice(0, 1500)}`);
+    }
   } catch (err) {
     console.log(`fetch error: ${err.message}`);
   }
