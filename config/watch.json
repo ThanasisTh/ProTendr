@@ -1,5 +1,6 @@
 {
   "_comment": "CPV codes to watch. Edit this list and push — no code changes needed. checkDigit is required for the KIMDIS source (empirically confirmed against the live API, since the EU's own published check-digit formula is known-broken); TED doesn't need it. Full CPV list: https://simap.ted.europa.eu/web/simap/cpv",
+  "_noiseNote": "72000000 and 72224000 are the two biggest sources of irrelevant hits (hardware procurement, audits, construction, generic consulting frameworks riding along as a minor tag on a big multi-code notice) - kept anyway because removing them loses far more true positives than false ones. 72224000 specifically is project-management/advisory work, not coding - drop it if you only want build work.",
   "buyerCountry": "GRC",
   "lookbackDays": 30,
   "cpvCodes": [
@@ -8,6 +9,13 @@
     { "code": "72212000", "checkDigit": "4", "label": "Programming services of application software" },
     { "code": "72224000", "checkDigit": "1", "label": "Project management consultancy services" },
     { "code": "72413000", "checkDigit": "8", "label": "World-wide web (WWW) site design services" },
-    { "code": "72316000", "checkDigit": "3", "label": "Data analysis services" }
+    { "code": "72316000", "checkDigit": "3", "label": "Data analysis services" },
+    { "code": "72230000", "checkDigit": "6", "label": "Custom software development services" },
+    { "code": "72240000", "checkDigit": "9", "label": "Systems analysis and programming services" },
+    { "code": "72261000", "checkDigit": "2", "label": "Software support services" },
+    { "code": "72262000", "checkDigit": "9", "label": "Software development services" },
+    { "code": "72266000", "checkDigit": "7", "label": "Software consultancy services" },
+    { "code": "72267000", "checkDigit": "4", "label": "Software maintenance and repair services" },
+    { "code": "72268000", "checkDigit": "1", "label": "Software supply services" }
   ]
 }
