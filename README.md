@@ -4,10 +4,13 @@
 
 ```
 GitHub Actions (scheduled, every 6h)
-  → scripts/fetch-tenders.mjs queries the TED Search API v3
-    (public, no key needed: https://docs.ted.europa.eu/api/latest/)
+  → scripts/fetch-tenders.mjs queries two sources, both public/keyless:
+      - TED Search API v3 (EU-threshold notices)
+        https://docs.ted.europa.eu/api/latest/
+      - KIMDIS Open Data API (smaller Greek national notices TED misses)
+        https://cerpp.eprocurement.gov.gr/khmdhs-opendata/swagger-ui/index.html
   → filters to CPV codes + country in config/watch.json
-  → writes data/tenders.json
+  → merges + normalizes both into data/tenders.json
   → commits it back to the repo
        ↓
 GitHub Pages (static)
@@ -31,7 +34,7 @@ Current defaults watch Greek buyers for IT/software/data-services CPV codes, as 
 
 ## Known limitations of this prototype
 
-- **TED only.** TED covers EU-threshold notices. It does not include ΚΗΜΔΗΣ's smaller, purely-national tenders — that source needs an API access request (see the implementation-plan note in the Vault repo) and isn't wired in yet.
 - **No document extraction.** Only notice-level metadata (title, buyer, CPV, value, deadline) is shown — not what's actually being asked for inside the tender documents. That's the moat for a real product, intentionally cut here.
-- **Field names in `scripts/fetch-tenders.mjs` are best-effort.** They're based on published TED API examples, not a live test run (this environment's network policy blocks direct calls to `api.ted.europa.eu`, so the first real test happens when the Action runs on GitHub's infrastructure). If the first scheduled/manual run fails, check the Action log — the TED API returns a descriptive error naming any invalid field, which is a one-line fix in the `FIELDS` array.
+- **KIMDIS notices have no direct detail link.** Unlike TED, there's no confirmed public deep-link URL pattern for a single KIMDIS notice, so its title carries the ΑΔΑΜ reference number (e.g. `[26PROC019601876]`) for manual lookup on promitheus.gov.gr instead of a clickable link.
+- **KIMDIS is queried one CPV code at a time.** The `cpvItems` field in its search API accepts an array, but whether that means OR or AND isn't documented or confirmed, so each watched code gets its own request rather than relying on unverified array semantics.
 - **Polling cadence is 6h**, not real-time — fine for browsing, not for competing on being first to see a notice.
