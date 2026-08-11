@@ -1,53 +1,60 @@
-// One-off diagnostic: this sandbox's egress proxy blocks *.gov.gr, so the
-// KIMDIS Open Data API's actual shape (endpoint path, params, response
-// format) can't be inspected from here. GitHub Actions runners aren't
-// behind that block, so this script probes a handful of likely paths and
-// logs status + a body snippet for each, to be read from the job log.
-// Delete this file once the real endpoint shape is confirmed.
+// One-off diagnostic: probe the real POST /notice endpoint to learn the
+// actual response item shape (the OpenAPI spec only says "content: object[]",
+// Swagger couldn't infer the concrete type) and to confirm the CPV code
+// format the API actually accepts. Delete this file once the real fetch
+// script is built and confirmed working.
 
 const BASE = "https://cerpp.eprocurement.gov.gr/khmdhs-opendata";
 
-const candidates = [{ method: "GET", url: `${BASE}/v3/api-docs` }];
+function fmtDate(d) {
+  return d.toISOString().slice(0, 10);
+}
 
-for (const { method, url } of candidates) {
-  console.log(`\n=== ${method} ${url} ===`);
+const today = new Date();
+const monthAgo = new Date(today);
+monthAgo.setUTCDate(monthAgo.getUTCDate() - 30);
+
+const attempts = [
+  {
+    label: "bare 8-digit CPV",
+    body: { cpvItems: ["72000000"], dateFrom: fmtDate(monthAgo), dateTo: fmtDate(today) },
+  },
+  {
+    label: "CPV with check digit",
+    body: { cpvItems: ["72000000-5"], dateFrom: fmtDate(monthAgo), dateTo: fmtDate(today) },
+  },
+  {
+    label: "no cpv filter, date range only",
+    body: { dateFrom: fmtDate(monthAgo), dateTo: fmtDate(today) },
+  },
+];
+
+for (const { label, body } of attempts) {
+  const url = `${BASE}/notice?page=0&size=3`;
+  console.log(`\n=== POST /notice (${label}) ===`);
+  console.log("request body:", JSON.stringify(body));
   try {
-    const res = await fetch(url, { method, headers: { Accept: "application/json,text/html,*/*" } });
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(body),
+    });
     const text = await res.text();
     console.log(`status: ${res.status}`);
-    console.log(`content-type: ${res.headers.get("content-type")}`);
-
-    // An OpenAPI spec is huge; summarize it (paths + params) instead of
-    // dumping raw JSON so the useful part isn't buried or truncated.
-    let asJson = null;
+    let json = null;
     try {
-      asJson = JSON.parse(text);
+      json = JSON.parse(text);
     } catch {
-      // not JSON, fall through to raw snippet
+      console.log("non-JSON body (first 800 chars):", text.slice(0, 800));
+      continue;
     }
-
-    if (asJson?.paths) {
-      console.log("servers:", JSON.stringify(asJson.servers));
-      console.log("OpenAPI spec detected. Paths:");
-      for (const [p, methods] of Object.entries(asJson.paths)) {
-        for (const [verb, def] of Object.entries(methods)) {
-          const params = (def.parameters ?? []).map((x) => x.name).join(", ");
-          const bodySchema = def.requestBody
-            ? JSON.stringify(def.requestBody.content ?? {}).slice(0, 300)
-            : "";
-          console.log(`  ${verb.toUpperCase()} ${p} | params: [${params}] | body: ${bodySchema}`);
-        }
-      }
-      const wanted = ["NoticeSearchCriteria", "Page", "PageableObject", "SortObject"];
-      for (const name of wanted) {
-        const schema = asJson.components?.schemas?.[name];
-        if (schema) {
-          console.log(`\n--- schema: ${name} ---`);
-          console.log(JSON.stringify(schema, null, 2));
-        }
+    if (res.ok) {
+      console.log(`totalElements: ${json.totalElements}, content length: ${json.content?.length}`);
+      if (json.content?.[0]) {
+        console.log("first content item:", JSON.stringify(json.content[0], null, 2));
       }
     } else {
-      console.log(`body (first 1500 chars):\n${text.slice(0, 1500)}`);
+      console.log("error body:", JSON.stringify(json, null, 2));
     }
   } catch (err) {
     console.log(`fetch error: ${err.message}`);
