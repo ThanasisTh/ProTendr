@@ -7,15 +7,7 @@
 
 const BASE = "https://cerpp.eprocurement.gov.gr/khmdhs-opendata";
 
-const candidates = [
-  { method: "GET", url: `${BASE}/v3/api-docs` },
-  { method: "GET", url: `${BASE}/swagger-ui/index.html` },
-  { method: "GET", url: `${BASE}/help` },
-  { method: "GET", url: `${BASE}/swagger.json` },
-  { method: "GET", url: `${BASE}/api-docs` },
-  { method: "GET", url: `${BASE}/swagger/v1/swagger.json` },
-  { method: "GET", url: `${BASE}` },
-];
+const candidates = [{ method: "GET", url: `${BASE}/v3/api-docs` }];
 
 for (const { method, url } of candidates) {
   console.log(`\n=== ${method} ${url} ===`);
@@ -35,6 +27,7 @@ for (const { method, url } of candidates) {
     }
 
     if (asJson?.paths) {
+      console.log("servers:", JSON.stringify(asJson.servers));
       console.log("OpenAPI spec detected. Paths:");
       for (const [p, methods] of Object.entries(asJson.paths)) {
         for (const [verb, def] of Object.entries(methods)) {
@@ -45,8 +38,13 @@ for (const { method, url } of candidates) {
           console.log(`  ${verb.toUpperCase()} ${p} | params: [${params}] | body: ${bodySchema}`);
         }
       }
-      if (asJson.components?.schemas) {
-        console.log("Schema names:", Object.keys(asJson.components.schemas).join(", "));
+      const wanted = ["NoticeSearchCriteria", "Page", "PageableObject", "SortObject"];
+      for (const name of wanted) {
+        const schema = asJson.components?.schemas?.[name];
+        if (schema) {
+          console.log(`\n--- schema: ${name} ---`);
+          console.log(JSON.stringify(schema, null, 2));
+        }
       }
     } else {
       console.log(`body (first 1500 chars):\n${text.slice(0, 1500)}`);
