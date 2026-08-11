@@ -26,7 +26,7 @@ const FIELDS = [
   "classification-cpv",
   "total-value",
   "total-value-cur",
-  "deadline-date",
+  "deadline",
   "publication-date",
   "links",
 ];
@@ -95,7 +95,7 @@ function normalizeNotice(raw) {
     cpv: raw["classification-cpv"] ?? null,
     value: raw["total-value"] ?? null,
     currency: raw["total-value-cur"] ?? null,
-    deadline: raw["deadline-date"] ?? null,
+    deadline: raw["deadline"] ?? null,
     publicationDate: raw["publication-date"] ?? null,
     url: link,
   };
