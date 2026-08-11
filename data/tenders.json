@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T12:36:59.817Z",
+  "generatedAt": "2026-08-11T12:56:00.916Z",
   "watch": {
     "_comment": "CPV codes to watch. Edit this list and push — no code changes needed. checkDigit is required for the KIMDIS source (empirically confirmed against the live API, since the EU's own published check-digit formula is known-broken); TED doesn't need it. Full CPV list: https://simap.ted.europa.eu/web/simap/cpv",
     "_noiseNote": "72000000 and 72224000 are the two biggest sources of irrelevant hits (hardware procurement, audits, construction, generic consulting frameworks riding along as a minor tag on a big multi-code notice) - kept anyway because removing them loses far more true positives than false ones. 72224000 specifically is project-management/advisory work, not coding - drop it if you only want build work.",
@@ -78,7 +78,7 @@
     {
       "id": "KIMDIS-26PROC019581487",
       "source": "KIMDIS",
-      "title": "ΥΠΗΡ. ΠΡΟΣΑΡΜΟΓΗΣ ΚΑΙ ΔΙΑΣΥΝΔΕΣΗΣ ΠΛΗΡ/ΚΟΥ ΣΥΣΤΗΜΑΤΟΣ PYDRA ΜΕ ΠΑΡΟΧΟ ΗΛ. ΤΙΜ. [26PROC019581487]",
+      "title": "ΥΠΗΡ. ΠΡΟΣΑΡΜΟΓΗΣ ΚΑΙ ΔΙΑΣΥΝΔΕΣΗΣ ΠΛΗΡ/ΚΟΥ ΣΥΣΤΗΜΑΤΟΣ PYDRA ΜΕ ΠΑΡΟΧΟ ΗΛ. ΤΙΜ.",
       "buyer": "ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ ΛΑΡΙΣΑΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -88,12 +88,12 @@
       "currency": "EUR",
       "deadline": "2026-08-11",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019581487"
     },
     {
       "id": "KIMDIS-26PROC019568112",
       "source": "KIMDIS",
-      "title": "Ψηφιακή εφαρμογή έξυπνου σχεδιασμού και αξιολόγησης υπεύθυνου εξωτερικού φωτισμού δημόσιων και ιδιωτ [26PROC019568112]",
+      "title": "Ψηφιακή εφαρμογή έξυπνου σχεδιασμού και αξιολόγησης υπεύθυνου εξωτερικού φωτισμού δημόσιων και ιδιωτ",
       "buyer": "ΔΗΜΟΣ ΚΕΝΤΡΙΚΩΝ ΤΖΟΥΜΕΡΚΩΝ",
       "buyerCountry": "GR",
       "cpv": [
@@ -103,29 +103,29 @@
       "currency": "EUR",
       "deadline": "2026-08-11",
       "publicationDate": "2026-08-03",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019568112"
     },
     {
       "id": "KIMDIS-26PROC019591489",
       "source": "KIMDIS",
-      "title": "Αναβάθμιση και ανακατασκευή Δημοτικής Πύλης [26PROC019591489]",
+      "title": "Αναβάθμιση και ανακατασκευή Δημοτικής Πύλης",
       "buyer": "ΔΗΜΟΣ ΦΑΙΣΤΟΥ",
       "buyerCountry": "GR",
       "cpv": [
-        "80511000-9",
+        "72413000-8",
         "72422000-4",
-        "72413000-8"
+        "80511000-9"
       ],
       "value": 7500,
       "currency": "EUR",
       "deadline": "2026-08-11",
       "publicationDate": "2026-08-06",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019591489"
     },
     {
       "id": "KIMDIS-26PROC019597746",
       "source": "KIMDIS",
-      "title": "Τεχνική Υποστήριξη των προγραμμάτων genesis [26PROC019597746]",
+      "title": "Τεχνική Υποστήριξη των προγραμμάτων genesis",
       "buyer": "ΟΡΓΑΝΙΣΜΟΣ ΚΟΙΝΩΝΙΚΗΣ ΑΛΛΗΛΕΓΓΥΗΣ & ΠΑΙΔΕΙΑΣ ΔΗΜΟΥ ΚΕΦΑΛΛΟΝΙΑΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -135,12 +135,12 @@
       "currency": "EUR",
       "deadline": "2026-08-11",
       "publicationDate": "2026-08-07",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019597746"
     },
     {
       "id": "KIMDIS-26PROC019583709",
       "source": "KIMDIS",
-      "title": "ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΟΙΚΟΝΟΜΙΚΗΣ ΠΡΟΣΦΟΡΑΣ ΓΙΑ ΤΗΝ ΥΠΗΡΕΣΙΑ ΔΙΑΧΕΙΡΙΣΗΣ ΠΛΗΡΟΦΟΡΙΑΚΟΥ ΣΥΣΤΗΜΑΤΟΣ HRIS [26PROC019583709]",
+      "title": "ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΟΙΚΟΝΟΜΙΚΗΣ ΠΡΟΣΦΟΡΑΣ ΓΙΑ ΤΗΝ ΥΠΗΡΕΣΙΑ ΔΙΑΧΕΙΡΙΣΗΣ ΠΛΗΡΟΦΟΡΙΑΚΟΥ ΣΥΣΤΗΜΑΤΟΣ HRIS",
       "buyer": "ΔΗΜΟΣ ΑΣΤΥΠΑΛΑΙΑΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -150,12 +150,12 @@
       "currency": "EUR",
       "deadline": "2026-08-11",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019583709"
     },
     {
       "id": "KIMDIS-26PROC019578523",
       "source": "KIMDIS",
-      "title": "Συντήρηση-Υποστήριξη εφαρμογών λογισμικού Δήμου Αλεξάνδρειας (DOTSOFT A.E.) [26PROC019578523]",
+      "title": "Συντήρηση-Υποστήριξη εφαρμογών λογισμικού Δήμου Αλεξάνδρειας (DOTSOFT A.E.)",
       "buyer": "ΔΗΜΟΣ ΑΛΕΞΑΝΔΡΕΙΑΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -165,12 +165,12 @@
       "currency": "EUR",
       "deadline": "2026-08-11",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019578523"
     },
     {
       "id": "KIMDIS-26PROC019593550",
       "source": "KIMDIS",
-      "title": "Πρόσκληση υποβολής προσφοράς για την μετάβαση της ΕΛΤΕ σε σύγχρονο, ασφαλές ψηφιακό περιβάλλον [26PROC019593550]",
+      "title": "Πρόσκληση υποβολής προσφοράς για την μετάβαση της ΕΛΤΕ σε σύγχρονο, ασφαλές ψηφιακό περιβάλλον",
       "buyer": "ΕΠΙΤΡΟΠΗ ΛΟΓΙΣΤΙΚΗΣ ΤΥΠΟΠΟΙΗΣΗΣ ΚΑΙ ΕΛΕΓΧΩΝ",
       "buyerCountry": "GR",
       "cpv": [
@@ -180,12 +180,12 @@
       "currency": "EUR",
       "deadline": "2026-08-11",
       "publicationDate": "2026-08-06",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019593550"
     },
     {
       "id": "KIMDIS-26PROC019581735",
       "source": "KIMDIS",
-      "title": "ΣΥΝΤΗΡΗΣΗ ΚΑΙ ΥΠΟΣΤΗΡΙΞΗ ΛΟΓΙΣΜΙΚΟΥ ΣΥΣΤΗΜΑΤΟΣ INFOHEALTH 7028 [26PROC019581735]",
+      "title": "ΣΥΝΤΗΡΗΣΗ ΚΑΙ ΥΠΟΣΤΗΡΙΞΗ ΛΟΓΙΣΜΙΚΟΥ ΣΥΣΤΗΜΑΤΟΣ INFOHEALTH 7028",
       "buyer": "ΝΟΜ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΑΘΗΝΩΝ 'ΚΟΡΓΙΑΛΕΝΕΙΟ ΜΠΕΝΑΚΕΙΟ'",
       "buyerCountry": "GR",
       "cpv": [
@@ -195,12 +195,12 @@
       "currency": "EUR",
       "deadline": "2026-08-11",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019581735"
     },
     {
       "id": "KIMDIS-26PROC019581574",
       "source": "KIMDIS",
-      "title": "ΣΥΝΤΗΡΗΣΗ ΠΛΗΡΟΦΟΡΙΑΚΟΥ ΣΥΣΤΗΜΑΤΟΣ ΕΡΓΑΣΤΗΡΙΩΝ MEDILAB L.I.S. & MEDILAB I VIEW ΣΕΠΤΕΜΒΡΙΟΥ 2026 7024 [26PROC019581574]",
+      "title": "ΣΥΝΤΗΡΗΣΗ ΠΛΗΡΟΦΟΡΙΑΚΟΥ ΣΥΣΤΗΜΑΤΟΣ ΕΡΓΑΣΤΗΡΙΩΝ MEDILAB L.I.S. & MEDILAB I VIEW ΣΕΠΤΕΜΒΡΙΟΥ 2026 7024",
       "buyer": "ΝΟΜ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΑΘΗΝΩΝ 'ΚΟΡΓΙΑΛΕΝΕΙΟ ΜΠΕΝΑΚΕΙΟ'",
       "buyerCountry": "GR",
       "cpv": [
@@ -210,12 +210,12 @@
       "currency": "EUR",
       "deadline": "2026-08-11",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019581574"
     },
     {
       "id": "KIMDIS-26PROC019581304",
       "source": "KIMDIS",
-      "title": "ΕΠΕΚΤΑΣΗ ΕΓΓΥΗΣΗΣ DELL SERVERS 7014 [26PROC019581304]",
+      "title": "ΕΠΕΚΤΑΣΗ ΕΓΓΥΗΣΗΣ DELL SERVERS 7014",
       "buyer": "ΝΟΜ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΑΘΗΝΩΝ 'ΚΟΡΓΙΑΛΕΝΕΙΟ ΜΠΕΝΑΚΕΙΟ'",
       "buyerCountry": "GR",
       "cpv": [
@@ -225,28 +225,28 @@
       "currency": "EUR",
       "deadline": "2026-08-11",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019581304"
     },
     {
       "id": "KIMDIS-26PROC019580688",
       "source": "KIMDIS",
-      "title": "Υπηρεσίες Συμβουλ.-Μηχανογρ. Υποστήριξη & Παραχώρηση Αδειών Χρήσης Βελτιωμένων Εκδόσεων [26PROC019580688]",
+      "title": "Υπηρεσίες Συμβουλ.-Μηχανογρ. Υποστήριξη & Παραχώρηση Αδειών Χρήσης Βελτιωμένων Εκδόσεων",
       "buyer": "ΔΗΜΟΣ ΕΟΡΔΑΙΑΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "72267000-4",
-        "48000000-8"
+        "48000000-8",
+        "72267000-4"
       ],
       "value": 33221.46,
       "currency": "EUR",
       "deadline": "2026-08-11",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019580688"
     },
     {
       "id": "KIMDIS-26PROC019578343",
       "source": "KIMDIS",
-      "title": "Πρόσκληση για υποβολή προσφοράς υπηρεσιών συντήρησης/υποστήριξης Papyros και my-kataggelies [26PROC019578343]",
+      "title": "Πρόσκληση για υποβολή προσφοράς υπηρεσιών συντήρησης/υποστήριξης Papyros και my-kataggelies",
       "buyer": "ΑΝΕΞΑΡΤΗΤΗ ΑΡΧΗ ΕΛΕΓΧΟΥ ΤΗΣ ΑΓΟΡΑΣ ΚΑΙ ΠΡΟΣΤΑΣΙΑΣ ΤΟΥ ΚΑΤΑΝΑΛΩΤΗ",
       "buyerCountry": "GR",
       "cpv": [
@@ -256,12 +256,12 @@
       "currency": "EUR",
       "deadline": "2026-08-11",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019578343"
     },
     {
       "id": "KIMDIS-26PROC019600177",
       "source": "KIMDIS",
-      "title": "Παρεχόμενες υπηρεσίες νεφοϋπολογιστικής  [26PROC019600177]",
+      "title": "Παρεχόμενες υπηρεσίες νεφοϋπολογιστικής ",
       "buyer": "ΔΗΜΟΣ ΚΑΛΛΙΘΕΑΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -271,12 +271,12 @@
       "currency": "EUR",
       "deadline": "2026-08-12",
       "publicationDate": "2026-08-07",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019600177"
     },
     {
       "id": "KIMDIS-26PROC019584070",
       "source": "KIMDIS",
-      "title": "Πρόσκληση Υποβολής Προσφοράς για την Υλοποίηση της Υπηρεσίας: «ΤΕΧΝΙΚΟΣ ΣΥΜΒΟΥΛΟΣ ΨΗΦΙΑΚΩΝ ΣΤΟ ΠΛΑΙΣ [26PROC019584070]",
+      "title": "Πρόσκληση Υποβολής Προσφοράς για την Υλοποίηση της Υπηρεσίας: «ΤΕΧΝΙΚΟΣ ΣΥΜΒΟΥΛΟΣ ΨΗΦΙΑΚΩΝ ΣΤΟ ΠΛΑΙΣ",
       "buyer": "ΠΕΡΙΦ. ΠΑΝΕΠΙΣΤ. ΓΕΝ. ΝΟΣΟΚ. ΙΩΑΝΝΙΝΩΝ",
       "buyerCountry": "GR",
       "cpv": [
@@ -286,12 +286,12 @@
       "currency": "EUR",
       "deadline": "2026-08-12",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019584070"
     },
     {
       "id": "KIMDIS-26PROC019559103",
       "source": "KIMDIS",
-      "title": "  Προμήθεια εξοπλισμού πληροφορικής για την κάλυψη αναγκών της ΕΥΣΥΔ ΜΕΥ  [26PROC019559103]",
+      "title": "  Προμήθεια εξοπλισμού πληροφορικής για την κάλυψη αναγκών της ΕΥΣΥΔ ΜΕΥ ",
       "buyer": "ΥΠΟΥΡΓΕΙΟ  ΜΕΤΑΝΑΣΤΕΥΣΗΣ ΚΑΙ ΑΣΥΛΟΥ",
       "buyerCountry": "GR",
       "cpv": [
@@ -301,28 +301,28 @@
       "currency": "EUR",
       "deadline": "2026-08-12",
       "publicationDate": "2026-07-31",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019559103"
     },
     {
       "id": "KIMDIS-26PROC019587255",
       "source": "KIMDIS",
-      "title": "ΠΡΟΣΚΛΗΣΗ ΓΙΑ ΤΗΝ ΥΠΟΒΟΛΗ ΠΡΟΣΦΟΡΑΣ προμήθειας πλατφόρμας εφαρμογών για τις «Ημέρες Εργασίας» και  [26PROC019587255]",
+      "title": "ΠΡΟΣΚΛΗΣΗ ΓΙΑ ΤΗΝ ΥΠΟΒΟΛΗ ΠΡΟΣΦΟΡΑΣ προμήθειας πλατφόρμας εφαρμογών για τις «Ημέρες Εργασίας» και ",
       "buyer": "ΔΗΜΟΣ ΚΑΛΑΜΑΡΙΑΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "72416000-9",
-        "72212000-4"
+        "72212000-4",
+        "72416000-9"
       ],
       "value": 12538.88,
       "currency": "EUR",
       "deadline": "2026-08-12",
       "publicationDate": "2026-08-06",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019587255"
     },
     {
       "id": "KIMDIS-26PROC019587091",
       "source": "KIMDIS",
-      "title": "ΠΑΡΟΧΗ ΣΥΜΒΟΥΛΕΥΤΙΚΗΣ ΥΠΟΣΤΗΡΙΞΗΣ ΓΙΑ ΤΗΝ ΓΙΑ ΥΛΟΠΟΙΗΣΗ ΕΡΓΩΝ ΣΤΟ ΠΛΑΙΣΙΟ ΠΡΟΓΡΑΜΜΑΤΩΝ 21-27 [26PROC019587091]",
+      "title": "ΠΑΡΟΧΗ ΣΥΜΒΟΥΛΕΥΤΙΚΗΣ ΥΠΟΣΤΗΡΙΞΗΣ ΓΙΑ ΤΗΝ ΓΙΑ ΥΛΟΠΟΙΗΣΗ ΕΡΓΩΝ ΣΤΟ ΠΛΑΙΣΙΟ ΠΡΟΓΡΑΜΜΑΤΩΝ 21-27",
       "buyer": "ΠΕΡ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΠΕΙΡΑΙΩΣ 'ΤΖΑΝΕΙΟ'",
       "buyerCountry": "GR",
       "cpv": [
@@ -332,12 +332,12 @@
       "currency": "EUR",
       "deadline": "2026-08-12",
       "publicationDate": "2026-08-06",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019587091"
     },
     {
       "id": "KIMDIS-26PROC019583730",
       "source": "KIMDIS",
-      "title": "ΣΥΜΒΟΥΛΟΣ ΔΙΑΧΕΙΡΙΣΗΣ ΣΤΟ ΠΛΑΙΣΙΟ ΤΗΣ ΠΡΑΞΗΣ  Shield [26PROC019583730]",
+      "title": "ΣΥΜΒΟΥΛΟΣ ΔΙΑΧΕΙΡΙΣΗΣ ΣΤΟ ΠΛΑΙΣΙΟ ΤΗΣ ΠΡΑΞΗΣ  Shield",
       "buyer": "ΠΕΡΙΦ. ΠΑΝΕΠΙΣΤ. ΓΕΝ. ΝΟΣΟΚ. ΙΩΑΝΝΙΝΩΝ",
       "buyerCountry": "GR",
       "cpv": [
@@ -347,12 +347,12 @@
       "currency": "EUR",
       "deadline": "2026-08-12",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019583730"
     },
     {
       "id": "KIMDIS-26PROC019582236",
       "source": "KIMDIS",
-      "title": "ΠΡΟΣΚΛΗΣΗ [26PROC019582236]",
+      "title": "ΠΡΟΣΚΛΗΣΗ",
       "buyer": "ΕΤΑΙΡΕΙΑ ΥΔΡΕΥΣΗΣ ΑΠΟΧΕΤΕΥΣΗΣ ΘΕΣΣΑΛΟΝΙΚΗΣ ΠΑΓΙΩΝ (ΕΥΑΘ ΠΑΓΙΩΝ)",
       "buyerCountry": "GR",
       "cpv": [
@@ -362,12 +362,12 @@
       "currency": "EUR",
       "deadline": "2026-08-12",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019582236"
     },
     {
       "id": "KIMDIS-26PROC019598533",
       "source": "KIMDIS",
-      "title": "Κανονικοποίηση Γεωχωρικών Δεδομένων Οδικών Σημάτων και Ανάπτυξη Web Εφαρμογής Καταγραφής [26PROC019598533]",
+      "title": "Κανονικοποίηση Γεωχωρικών Δεδομένων Οδικών Σημάτων και Ανάπτυξη Web Εφαρμογής Καταγραφής",
       "buyer": "ΔΗΜΟΣ ΑΘΗΝΑΙΩΝ ΑΝΩΝΥΜΗ ΑΝΑΠΤΥΞΙΑΚΗ ΕΤΑΙΡΕΙΑ ΜΗΧΑΝΟΓΡΑΦΗΣΗΣ & ΕΠΙΧΕΙΡΗΣΙΑΚΩΝ ΜΟΝΑΔΩΝ ΟΤΑ",
       "buyerCountry": "GR",
       "cpv": [
@@ -377,12 +377,12 @@
       "currency": "EUR",
       "deadline": "2026-08-12",
       "publicationDate": "2026-08-07",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019598533"
     },
     {
       "id": "KIMDIS-26PROC019596171",
       "source": "KIMDIS",
-      "title": "57367 - ΕΤΗΣΙΑ ΑΝΑΝΕΩΣΗ ΣΥΜΒΑΣΗΣ ΥΠΟΣΤΗΡΙΞΗΣ & ΦΙΛΟΞΕΝΙΑΣ MOBILE ΕΦΑΡΜΟΓΗΣ [26PROC019596171]",
+      "title": "57367 - ΕΤΗΣΙΑ ΑΝΑΝΕΩΣΗ ΣΥΜΒΑΣΗΣ ΥΠΟΣΤΗΡΙΞΗΣ & ΦΙΛΟΞΕΝΙΑΣ MOBILE ΕΦΑΡΜΟΓΗΣ",
       "buyer": "Ο.ΣΥ. Α.Ε. - ΟΔΙΚΕΣ ΣΥΓΚΟΙΝΩΝΙΕΣ Α.Ε.",
       "buyerCountry": "GR",
       "cpv": [
@@ -392,12 +392,12 @@
       "currency": "EUR",
       "deadline": "2026-08-13",
       "publicationDate": "2026-08-07",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019596171"
     },
     {
       "id": "KIMDIS-26PROC019573829",
       "source": "KIMDIS",
-      "title": "Πρόσκληση σε διαπραγμάτευση για την υποστήριξη συμβολαίων \"ACE ERP eCM’’ [26PROC019573829]",
+      "title": "Πρόσκληση σε διαπραγμάτευση για την υποστήριξη συμβολαίων \"ACE ERP eCM’’",
       "buyer": "ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚΑΙ ΑΘΛΗΤΙΣΜΟΥ",
       "buyerCountry": "GR",
       "cpv": [
@@ -407,12 +407,12 @@
       "currency": "EUR",
       "deadline": "2026-08-13",
       "publicationDate": "2026-08-04",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019573829"
     },
     {
       "id": "KIMDIS-26PROC019601876",
       "source": "KIMDIS",
-      "title": "Παροχή Υπηρεσιών Υποστήριξης Τήρησης Διατυπώσεων Δημοσιότητας για Ηλεκτρονικούς Διαγωνισμού [26PROC019601876]",
+      "title": "Παροχή Υπηρεσιών Υποστήριξης Τήρησης Διατυπώσεων Δημοσιότητας για Ηλεκτρονικούς Διαγωνισμού",
       "buyer": "ΔΗΜΟΣ ΜΑΡΑΘΩΝΟΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -422,12 +422,12 @@
       "currency": "EUR",
       "deadline": "2026-08-14",
       "publicationDate": "2026-08-07",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019601876"
     },
     {
       "id": "KIMDIS-26PROC019569135",
       "source": "KIMDIS",
-      "title": "Ανανέωση – αναβάθμιση αδειών χρήσης προστασίας από κακόβουλο λογισμικό, χρονικής διάρκειας ενός (1)  [26PROC019569135]",
+      "title": "Ανανέωση – αναβάθμιση αδειών χρήσης προστασίας από κακόβουλο λογισμικό, χρονικής διάρκειας ενός (1) ",
       "buyer": "ΠΕΡ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΑΘΗΝΩΝ 'Γ. ΓΕΝΝΗΜΑΤΑΣ'",
       "buyerCountry": "GR",
       "cpv": [
@@ -437,12 +437,12 @@
       "currency": "EUR",
       "deadline": "2026-08-14",
       "publicationDate": "2026-08-04",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019569135"
     },
     {
       "id": "KIMDIS-26PROC019581531",
       "source": "KIMDIS",
-      "title": "Πρόσκληση υποβολής προσφοράς τεχνικής υποστήριξης διαδικτυακού κόμβου & αναβάθμισης ψηφ. εφαρμ.ΑΜΗ [26PROC019581531]",
+      "title": "Πρόσκληση υποβολής προσφοράς τεχνικής υποστήριξης διαδικτυακού κόμβου & αναβάθμισης ψηφ. εφαρμ.ΑΜΗ",
       "buyer": "ΑΡΧΑΙΟΛΟΓΙΚΟ ΜΟΥΣΕΙΟ ΗΡΑΚΛΕΙΟΥ",
       "buyerCountry": "GR",
       "cpv": [
@@ -453,29 +453,29 @@
       "currency": "EUR",
       "deadline": "2026-08-14",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019581531"
     },
     {
       "id": "KIMDIS-26PROC019577289",
       "source": "KIMDIS",
-      "title": "Πρόσκληση κατάθεσης προσφοράς για την συντήρηση - βελτίωση της διαδικτυακής πύλης του Δήμου Καλαμάτα [26PROC019577289]",
+      "title": "Πρόσκληση κατάθεσης προσφοράς για την συντήρηση - βελτίωση της διαδικτυακής πύλης του Δήμου Καλαμάτα",
       "buyer": "ΔΗΜΟΣ ΚΑΛΑΜΑΤΑΣ",
       "buyerCountry": "GR",
       "cpv": [
         "72415000-2",
-        "72311100-9",
-        "72413000-8"
+        "72413000-8",
+        "72311100-9"
       ],
       "value": 11966,
       "currency": "EUR",
       "deadline": "2026-08-14",
       "publicationDate": "2026-08-04",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019577289"
     },
     {
       "id": "KIMDIS-26PROC019607201",
       "source": "KIMDIS",
-      "title": "Ανανέωση συμβολαίων υποστήριξης λογισμικού των προγραμμάτων έργων ACE ERP  [26PROC019607201]",
+      "title": "Ανανέωση συμβολαίων υποστήριξης λογισμικού των προγραμμάτων έργων ACE ERP ",
       "buyer": "ΔΗΜΟΤΙΚΗ ΕΠΙΧΕΙΡΗΣΗ ΤΗΛΕΘΕΡΜΑΝΣΗΣ ΠΤΟΛΕΜΑΙΔΑΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -485,12 +485,12 @@
       "currency": "EUR",
       "deadline": "2026-08-14",
       "publicationDate": "2026-08-10",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019607201"
     },
     {
       "id": "KIMDIS-26PROC019590492",
       "source": "KIMDIS",
-      "title": "Συντήρηση, λειτουργική υποστήριξη και εμπλουτισμός του περιεχομένου της εφαρμογής του Ψηφιακού Βοηθο [26PROC019590492]",
+      "title": "Συντήρηση, λειτουργική υποστήριξη και εμπλουτισμός του περιεχομένου της εφαρμογής του Ψηφιακού Βοηθο",
       "buyer": "ΠΕΡΙΦΕΡΕΙΑ ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -500,12 +500,12 @@
       "currency": "EUR",
       "deadline": "2026-08-14",
       "publicationDate": "2026-08-06",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019590492"
     },
     {
       "id": "KIMDIS-26PROC019598105",
       "source": "KIMDIS",
-      "title": "ΠΡΟΣΚΛΗΣΗ ΠΡΟΜΗΘΕΙΑ ΕΦΑΡΜΟΓΗΣ NMS [26PROC019598105]",
+      "title": "ΠΡΟΣΚΛΗΣΗ ΠΡΟΜΗΘΕΙΑ ΕΦΑΡΜΟΓΗΣ NMS",
       "buyer": "ΔΗΜΟΣ ΒΟΛΟΥ",
       "buyerCountry": "GR",
       "cpv": [
@@ -515,12 +515,12 @@
       "currency": "EUR",
       "deadline": "2026-08-14",
       "publicationDate": "2026-08-07",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019598105"
     },
     {
       "id": "KIMDIS-26PROC019605392",
       "source": "KIMDIS",
-      "title": "Παροχή Υπηρεσιών Συμβούλου για τον σχεδιασμό και την προετοιμασία υποβολής φακέλου [26PROC019605392]",
+      "title": "Παροχή Υπηρεσιών Συμβούλου για τον σχεδιασμό και την προετοιμασία υποβολής φακέλου",
       "buyer": "ΜΟΥΣΕΙΟ ΓΟΥΛΑΝΔΡΗ ΦΥΣΙΚΗΣ ΙΣΤΟΡΙΑΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -530,12 +530,12 @@
       "currency": "EUR",
       "deadline": "2026-08-15",
       "publicationDate": "2026-08-10",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019605392"
     },
     {
       "id": "KIMDIS-26PROC019603258",
       "source": "KIMDIS",
-      "title": "ΠΡΟΣΚΛΗΣΗ ΠΡΟΣΦΟΡΑΣ ΓΙΑ ΠΡΟΑΓΟΡΑ ΠΑΚΕΤΟΥ (20) ΩΡΩΝ ΤΕΧΝΙΚΗΣ ΥΠΟΣΤΗΡΙΞΗΣ ΤΗΣ ΕΦΑΡΜΟΓΗΣ GALAXY [26PROC019603258]",
+      "title": "ΠΡΟΣΚΛΗΣΗ ΠΡΟΣΦΟΡΑΣ ΓΙΑ ΠΡΟΑΓΟΡΑ ΠΑΚΕΤΟΥ (20) ΩΡΩΝ ΤΕΧΝΙΚΗΣ ΥΠΟΣΤΗΡΙΞΗΣ ΤΗΣ ΕΦΑΡΜΟΓΗΣ GALAXY",
       "buyer": "ΑΡΧΑΙΟΛΟΓΙΚΟ ΜΟΥΣΕΙΟ ΘΕΣΣΑΛΟΝΙΚΗΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -545,12 +545,12 @@
       "currency": "EUR",
       "deadline": "2026-08-15",
       "publicationDate": "2026-08-10",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019603258"
     },
     {
       "id": "KIMDIS-26PROC019605631",
       "source": "KIMDIS",
-      "title": "ΣΥΝΤΗΡΗΣΗ ΚΑΙ ΦΙΛΟΞΕΝΙΑ ΙΣΤΟΣΕΛΙΔΑΣ KEKMAS.GR [26PROC019605631]",
+      "title": "ΣΥΝΤΗΡΗΣΗ ΚΑΙ ΦΙΛΟΞΕΝΙΑ ΙΣΤΟΣΕΛΙΔΑΣ KEKMAS.GR",
       "buyer": "ΔΗΜΟΣ ΜΑΡΩΝΕΙΑΣ - ΣΑΠΩΝ",
       "buyerCountry": "GR",
       "cpv": [
@@ -560,12 +560,12 @@
       "currency": "EUR",
       "deadline": "2026-08-17",
       "publicationDate": "2026-08-10",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019605631"
     },
     {
       "id": "KIMDIS-26PROC019605366",
       "source": "KIMDIS",
-      "title": "ΜΕΤΑΦΡΑΣΗ, ΠΡΟΣΘΕΤΗ ΑΝΑΠΤΥΞΗ, ΦΙΛΟΞΕΝΙΑ & ΤΕΧΝΙΚΗ ΥΠΟΣΤΗΡΙΚΗ ΙΣΤΟΣΕΛΙΔΑΣ MYMARONEIASAPES.GR [26PROC019605366]",
+      "title": "ΜΕΤΑΦΡΑΣΗ, ΠΡΟΣΘΕΤΗ ΑΝΑΠΤΥΞΗ, ΦΙΛΟΞΕΝΙΑ & ΤΕΧΝΙΚΗ ΥΠΟΣΤΗΡΙΚΗ ΙΣΤΟΣΕΛΙΔΑΣ MYMARONEIASAPES.GR",
       "buyer": "ΔΗΜΟΣ ΜΑΡΩΝΕΙΑΣ - ΣΑΠΩΝ",
       "buyerCountry": "GR",
       "cpv": [
@@ -575,12 +575,12 @@
       "currency": "EUR",
       "deadline": "2026-08-17",
       "publicationDate": "2026-08-10",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019605366"
     },
     {
       "id": "KIMDIS-26PROC019572893",
       "source": "KIMDIS",
-      "title": "ΥΠΗΡΕΣΙΕΣ ΥΠΟΣΤΗΡΙΞΗΣ/ ΠΑΡΑΜΕΤΡΟΠΟΙΗΣΗΣ ΛΟΓΙΣΜΙΚΟΥ ΠΡΟΓΡΑΜΜΑΤΟΣ [26PROC019572893]",
+      "title": "ΥΠΗΡΕΣΙΕΣ ΥΠΟΣΤΗΡΙΞΗΣ/ ΠΑΡΑΜΕΤΡΟΠΟΙΗΣΗΣ ΛΟΓΙΣΜΙΚΟΥ ΠΡΟΓΡΑΜΜΑΤΟΣ",
       "buyer": "ΔΗΜΟΣ ΠΑΥΛΟΥ ΜΕΛΑ",
       "buyerCountry": "GR",
       "cpv": [
@@ -590,12 +590,12 @@
       "currency": "EUR",
       "deadline": "2026-08-17",
       "publicationDate": "2026-08-04",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019572893"
     },
     {
       "id": "KIMDIS-26PROC019595975",
       "source": "KIMDIS",
-      "title": "Πρόσκληση σε διαπραγμάτευση υπηρεσιών ετήσιας υποστήριξης του Ο.Π.Σ. COMPASS [26PROC019595975]",
+      "title": "Πρόσκληση σε διαπραγμάτευση υπηρεσιών ετήσιας υποστήριξης του Ο.Π.Σ. COMPASS",
       "buyer": "ΝΟΜ.ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ ΚΙΛΚΙΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -605,29 +605,29 @@
       "currency": "EUR",
       "deadline": "2026-08-18",
       "publicationDate": "2026-08-07",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019595975"
     },
     {
       "id": "KIMDIS-26PROC019605110",
       "source": "KIMDIS",
-      "title": "ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ Παροχή Υπηρεσιών  για τη συντήρηση, την υποστήριξη, την επιπλέον προμήθ [26PROC019605110]",
+      "title": "ΠΡΟΣΚΛΗΣΗ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΑΣ Παροχή Υπηρεσιών  για τη συντήρηση, την υποστήριξη, την επιπλέον προμήθ",
       "buyer": "ΔΗΜΟΣ ΜΑΡΑΘΩΝΟΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "48613000-8",
         "72261000-2",
+        "48613000-8",
         "80533100-0"
       ],
       "value": 15500,
       "currency": "EUR",
       "deadline": "2026-08-18",
       "publicationDate": "2026-08-10",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019605110"
     },
     {
       "id": "KIMDIS-26PROC019606537",
       "source": "KIMDIS",
-      "title": "ΠΡΟΣΚΛΗΣΗ ΑΝΑΘΕΣΗΣ ΑΝΑΒΑΘΜΙΣΗΣ ΕΦΑΡΜΟΓΗΣ ΜΗΤΡΩΟΥ ΠΩΛΗΤΩΝ Λ.Α. ΚΑΙ ΔΙΑΔΙΚΤΥΑΚΗΣ ΕΦΑΡΜΟΓΗΣ ΦΛΛΑΠΕΘ [26PROC019606537]",
+      "title": "ΠΡΟΣΚΛΗΣΗ ΑΝΑΘΕΣΗΣ ΑΝΑΒΑΘΜΙΣΗΣ ΕΦΑΡΜΟΓΗΣ ΜΗΤΡΩΟΥ ΠΩΛΗΤΩΝ Λ.Α. ΚΑΙ ΔΙΑΔΙΚΤΥΑΚΗΣ ΕΦΑΡΜΟΓΗΣ ΦΛΛΑΠΕΘ",
       "buyer": "ΦΟΡΕΑΣ ΛΕΙΤΟΥΡΓΙΑΣ ΛΑΙΚΩΝ ΑΓΟΡΩΝ ΠΕΡΙΦΕΡΕΙΑΚΗΣ ΕΝΟΤΗΤΑΣ ΘΕΣΣΑΛΟΝΙΚΗΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -637,12 +637,12 @@
       "currency": "EUR",
       "deadline": "2026-08-18",
       "publicationDate": "2026-08-10",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019606537"
     },
     {
       "id": "KIMDIS-26PROC019528566",
       "source": "KIMDIS",
-      "title": "ΔΙΑΚΗΡΥΞΗ:ΥΠΟΕΡΓΟ 2: ΔΡΑΣΕΙΣ ΨΗΦΙΟΠΟΙΗΣΗΣ, ΠΡΟΩΘΗΣΗΣ ΚΑΙ ΑΝΑΔΕΙΞΗΣ ΚΑΙ ΔΙΟΡΓΑΝΩΣΗ ΕΚΔΗΛΩΣΕΩΝ [26PROC019528566]",
+      "title": "ΔΙΑΚΗΡΥΞΗ:ΥΠΟΕΡΓΟ 2: ΔΡΑΣΕΙΣ ΨΗΦΙΟΠΟΙΗΣΗΣ, ΠΡΟΩΘΗΣΗΣ ΚΑΙ ΑΝΑΔΕΙΞΗΣ ΚΑΙ ΔΙΟΡΓΑΝΩΣΗ ΕΚΔΗΛΩΣΕΩΝ",
       "buyer": "ΔΗΜΟΣ ΑΛΜΩΠΙΑΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -652,12 +652,12 @@
       "currency": "EUR",
       "deadline": "2026-08-20",
       "publicationDate": "2026-07-28",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019528566"
     },
     {
       "id": "KIMDIS-26PROC019585430",
       "source": "KIMDIS",
-      "title": "προμήθεια αδειών χρήσης CHECKPOINT [26PROC019585430]",
+      "title": "προμήθεια αδειών χρήσης CHECKPOINT",
       "buyer": "ΟΡΓΑΝΙΣΜΟΣ ΒΙΟΜΗΧΑΝΙΚΗΣ ΙΔΙΟΚΤΗΣΙΑΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -667,7 +667,7 @@
       "currency": "EUR",
       "deadline": "2026-08-21",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019585430"
     },
     {
       "id": "TED-488789-2026",
@@ -705,7 +705,7 @@
     {
       "id": "KIMDIS-26PROC019527637",
       "source": "KIMDIS",
-      "title": "Διενέργεια_Ηλεκτρονικού_Κάτω_Υπηρεσίες αναβάθμισης_διαδικτυακής πύλης_Υπουργείου Πολιτισμού_5214763. [26PROC019527637]",
+      "title": "Διενέργεια_Ηλεκτρονικού_Κάτω_Υπηρεσίες αναβάθμισης_διαδικτυακής πύλης_Υπουργείου Πολιτισμού_5214763.",
       "buyer": "ΚΟΙΝΩΝΙΑ ΤΗΣ ΠΛΗΡΟΦΟΡΙΑΣ ΑΕ",
       "buyerCountry": "GR",
       "cpv": [
@@ -715,12 +715,12 @@
       "currency": "EUR",
       "deadline": "2026-08-24",
       "publicationDate": "2026-07-28",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019527637"
     },
     {
       "id": "KIMDIS-26PROC019515083",
       "source": "KIMDIS",
-      "title": "ΔΕΑ-525149-Προμήθεια,Ανάπτυξη,Παραμετροποίηση,Λειτουργία & Υποστήριξη Outage Planning [26PROC019515083]",
+      "title": "ΔΕΑ-525149-Προμήθεια,Ανάπτυξη,Παραμετροποίηση,Λειτουργία & Υποστήριξη Outage Planning",
       "buyer": "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ ΑΔΜΗΕ ΑΕ",
       "buyerCountry": "GR",
       "cpv": [
@@ -730,12 +730,12 @@
       "currency": "EUR",
       "deadline": "2026-08-24",
       "publicationDate": "2026-07-24",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019515083"
     },
     {
       "id": "KIMDIS-26PROC019550384",
       "source": "KIMDIS",
-      "title": "ΔΙΑΚΗΡΥΞΗ ΠΑΡΟΧΗΣ ΥΠΗΡΕΣΙΩΝ ΣΥΝΤΗΡΗΣΗΣ-ΤΕΧΝΙΚΗΣ ΥΠΟΣΤΗΡΙΞΗΣ ΠΛΗΡΟΦΟΡΙΑΚΟΥ ΣΥΣΤΗΜΑΤΟΣ [26PROC019550384]",
+      "title": "ΔΙΑΚΗΡΥΞΗ ΠΑΡΟΧΗΣ ΥΠΗΡΕΣΙΩΝ ΣΥΝΤΗΡΗΣΗΣ-ΤΕΧΝΙΚΗΣ ΥΠΟΣΤΗΡΙΞΗΣ ΠΛΗΡΟΦΟΡΙΑΚΟΥ ΣΥΣΤΗΜΑΤΟΣ",
       "buyer": "ΓΕΝΙΚΟ ΝΟΣΟΚΟΜΕΙΟ ΔΙΔΥΜΟΤΕΙΧΟΥ",
       "buyerCountry": "GR",
       "cpv": [
@@ -746,12 +746,12 @@
       "currency": "EUR",
       "deadline": "2026-08-24",
       "publicationDate": "2026-07-30",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019550384"
     },
     {
       "id": "KIMDIS-26PROC019577056",
       "source": "KIMDIS",
-      "title": "Παροχή εξειδικευμένων  υπηρεσιών  υποστήριξης  της  Μονάδας  Κυβερνοασφάλειας,  εγκατάστασης  και   [26PROC019577056]",
+      "title": "Παροχή εξειδικευμένων  υπηρεσιών  υποστήριξης  της  Μονάδας  Κυβερνοασφάλειας,  εγκατάστασης  και  ",
       "buyer": "ΕΛΛΗΝΙΚΟ ΚΕΝΤΡΟ ΘΑΛΑΣΣΙΩΝ ΕΡΕΥΝΩΝ (ΕΛ.ΚΕ.Θ.Ε.)",
       "buyerCountry": "GR",
       "cpv": [
@@ -761,23 +761,23 @@
       "currency": "EUR",
       "deadline": "2026-08-25",
       "publicationDate": "2026-08-04",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019577056"
     },
     {
       "id": "KIMDIS-26PROC019609267",
       "source": "KIMDIS",
-      "title": "Παροχή Υπηρεσιών Συστήματος Λήψης Αποφάσεων για τη Διαχείριση της άρδευσης (DSS) Πράξης AGRI Adapt [26PROC019609267]",
+      "title": "Παροχή Υπηρεσιών Συστήματος Λήψης Αποφάσεων για τη Διαχείριση της άρδευσης (DSS) Πράξης AGRI Adapt",
       "buyer": "ΔΙΚΤΥΟ ΣΥΝΕΡΓΑΣΙΑΣ ΠΕΡΙΦΕΡΕΙΑΣ ΙΟΝΙΩΝ ΝΗΣΩΝ ΠΕ ΖΑΚΥΝΘΟΥ ΚΑΙ ΔΗΜΟΥ ΖΑΚΥΝΘΟΥ",
       "buyerCountry": "GR",
       "cpv": [
-        "72200000-7",
-        "38221000-0"
+        "38221000-0",
+        "72200000-7"
       ],
       "value": 62099.99,
       "currency": "EUR",
       "deadline": "2026-08-27",
       "publicationDate": "2026-08-10",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019609267"
     },
     {
       "id": "TED-525086-2026",
@@ -825,7 +825,7 @@
     {
       "id": "KIMDIS-26PROC019585627",
       "source": "KIMDIS",
-      "title": "ΑΝΑΝΕΩΣΗ/ΣΥΝΤΗΡΗΣΗ ΑΔΕΙΩΝ ΛΟΓΙΣΜΙΚΟΥ SAP BUSINESS ONE - Δ8447 - ΔΙΕΥΚΡΙΝΙΣΕΙΣ [26PROC019585627]",
+      "title": "ΑΝΑΝΕΩΣΗ/ΣΥΝΤΗΡΗΣΗ ΑΔΕΙΩΝ ΛΟΓΙΣΜΙΚΟΥ SAP BUSINESS ONE - Δ8447 - ΔΙΕΥΚΡΙΝΙΣΕΙΣ",
       "buyer": "ΕΥΔΑΠ ΑΕ",
       "buyerCountry": "GR",
       "cpv": [
@@ -835,12 +835,12 @@
       "currency": "EUR",
       "deadline": "2026-08-31",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019585627"
     },
     {
       "id": "KIMDIS-26PROC019487906",
       "source": "KIMDIS",
-      "title": "ΑΝΑΘΕΣΗ ΥΠΗΡΕΣΙΩΝ ΤΕΧΝΙΚΟΥ ΣΥΜΒΟΥΛΟΥ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΟΣ «ΚΑΛΥΨΗ» [26PROC019487906]",
+      "title": "ΑΝΑΘΕΣΗ ΥΠΗΡΕΣΙΩΝ ΤΕΧΝΙΚΟΥ ΣΥΜΒΟΥΛΟΥ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΟΣ «ΚΑΛΥΨΗ»",
       "buyer": "ΟΡΓΑΝΙΣΜΟΣ ΠΡΟΝΟΙΑΚΩΝ ΕΠΙΔΟΜΑΤΩΝ ΚΑΙ ΚΟΝΩΝΙΚΗΣ ΑΛΛΗΛΕΓΓΥΗΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -850,12 +850,12 @@
       "currency": "EUR",
       "deadline": "2026-09-01",
       "publicationDate": "2026-07-21",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019487906"
     },
     {
       "id": "KIMDIS-26PROC019484278",
       "source": "KIMDIS",
-      "title": "Ανάθεση υπηρεσιών τεχνικού Συμβούλου του προγράμματος «ΚΑΛΥΨΗ» [26PROC019484278]",
+      "title": "Ανάθεση υπηρεσιών τεχνικού Συμβούλου του προγράμματος «ΚΑΛΥΨΗ»",
       "buyer": "ΟΡΓΑΝΙΣΜΟΣ ΠΡΟΝΟΙΑΚΩΝ ΕΠΙΔΟΜΑΤΩΝ ΚΑΙ ΚΟΝΩΝΙΚΗΣ ΑΛΛΗΛΕΓΓΥΗΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -865,48 +865,48 @@
       "currency": "EUR",
       "deadline": "2026-09-01",
       "publicationDate": "2026-07-21",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019484278"
     },
     {
       "id": "KIMDIS-26PROC019436987",
       "source": "KIMDIS",
-      "title": "Διακήρυξη Υπηρεσιών Υποστήριξης της Διεύθυνσης Πληροφορικής της ΕΒΕ [26PROC019436987]",
+      "title": "Διακήρυξη Υπηρεσιών Υποστήριξης της Διεύθυνσης Πληροφορικής της ΕΒΕ",
       "buyer": "ΕΘΝΙΚΗ ΒΙΒΛΙΟΘΗΚΗ ΕΛΛΑΔΟΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "72253200-5",
-        "72222000-7",
         "72221000-0",
-        "72224000-1"
+        "72224000-1",
+        "72253200-5",
+        "72222000-7"
       ],
       "value": 1499780,
       "currency": "EUR",
       "deadline": "2026-09-01",
       "publicationDate": "2026-07-14",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019436987"
     },
     {
       "id": "KIMDIS-26PROC019434515",
       "source": "KIMDIS",
-      "title": "Προκήρυξη Υπηρεσιών Υποστήριξης της Διεύθυνσης Πληροφορικής της ΕΒΕ [26PROC019434515]",
+      "title": "Προκήρυξη Υπηρεσιών Υποστήριξης της Διεύθυνσης Πληροφορικής της ΕΒΕ",
       "buyer": "ΕΘΝΙΚΗ ΒΙΒΛΙΟΘΗΚΗ ΕΛΛΑΔΟΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "72224000-1",
-        "72222000-7",
+        "72253200-5",
         "72221000-0",
-        "72253200-5"
+        "72222000-7",
+        "72224000-1"
       ],
       "value": 1499780,
       "currency": "EUR",
       "deadline": "2026-09-01",
       "publicationDate": "2026-07-13",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019434515"
     },
     {
       "id": "KIMDIS-26PROC019448091",
       "source": "KIMDIS",
-      "title": "06/2026 ΔΙΕΘΝΗΣ ΔΙΑΓΩΝΙΣΜΟΣ - Expo 2027 Belgrade  [26PROC019448091]",
+      "title": "06/2026 ΔΙΕΘΝΗΣ ΔΙΑΓΩΝΙΣΜΟΣ - Expo 2027 Belgrade ",
       "buyer": "ΕΛΛΗΝΙΚΗ ΕΤΑΙΡΕΙΑ ΕΠΕΝΔΥΣΕΩΝ ΚΑΙ ΕΞΩΤΕΡΙΚΟΥ ΕΜΠΟΡΙΟΥ Α.Ε.",
       "buyerCountry": "GR",
       "cpv": [
@@ -917,12 +917,12 @@
       "currency": "EUR",
       "deadline": "2026-09-02",
       "publicationDate": "2026-07-15",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019448091"
     },
     {
       "id": "KIMDIS-26PROC019554860",
       "source": "KIMDIS",
-      "title": "ΕΝΙΣΧΥΣΗ ΨΗΦΙΑΚΩΝ ΥΠΟΔΟΜΩΝ ΤΗΣ 3ΗΣ ΥΠΕ ΥΠ.1 [26PROC019554860]",
+      "title": "ΕΝΙΣΧΥΣΗ ΨΗΦΙΑΚΩΝ ΥΠΟΔΟΜΩΝ ΤΗΣ 3ΗΣ ΥΠΕ ΥΠ.1",
       "buyer": "3Η ΔΥΠΕ ΜΑΚΕΔΟΝΙΑΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -932,12 +932,12 @@
       "currency": "EUR",
       "deadline": "2026-09-04",
       "publicationDate": "2026-07-31",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019554860"
     },
     {
       "id": "KIMDIS-26PROC019552999",
       "source": "KIMDIS",
-      "title": "ΕΕΕΚ_530226_2026 [26PROC019552999]",
+      "title": "ΕΕΕΚ_530226_2026",
       "buyer": "3Η ΔΥΠΕ ΜΑΚΕΔΟΝΙΑΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -947,7 +947,7 @@
       "currency": "EUR",
       "deadline": "2026-09-04",
       "publicationDate": "2026-07-31",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019552999"
     },
     {
       "id": "TED-535020-2026",
@@ -1050,128 +1050,128 @@
     {
       "id": "KIMDIS-26PROC019596442",
       "source": "KIMDIS",
-      "title": "Μετάθεση_14947/23-06-2026 Διακήρυξης_«Ψηφιακός Μετασχηματισμός Διαδικασιών Κτήσης Ιθαγένειας». [26PROC019596442]",
-      "buyer": "ΚΟΙΝΩΝΙΑ ΤΗΣ ΠΛΗΡΟΦΟΡΙΑΣ ΑΕ",
-      "buyerCountry": "GR",
-      "cpv": [
-        "72262000-9",
-        "72000000-5",
-        "80500000-9"
-      ],
-      "value": 4248240,
-      "currency": "EUR",
-      "deadline": "2026-09-07",
-      "publicationDate": "2026-08-07",
-      "url": null
-    },
-    {
-      "id": "KIMDIS-26PROC019596340",
-      "source": "KIMDIS",
-      "title": "Μετάθεση_14947/23-06-2026 Διακήρυξης_«Ψηφιακός Μετασχηματισμός Διαδικασιών Κτήσης Ιθαγένειας». [26PROC019596340]",
+      "title": "Μετάθεση_14947/23-06-2026 Διακήρυξης_«Ψηφιακός Μετασχηματισμός Διαδικασιών Κτήσης Ιθαγένειας».",
       "buyer": "ΚΟΙΝΩΝΙΑ ΤΗΣ ΠΛΗΡΟΦΟΡΙΑΣ ΑΕ",
       "buyerCountry": "GR",
       "cpv": [
         "80500000-9",
-        "72000000-5",
-        "72262000-9"
+        "72262000-9",
+        "72000000-5"
       ],
       "value": 4248240,
       "currency": "EUR",
       "deadline": "2026-09-07",
       "publicationDate": "2026-08-07",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019596442"
+    },
+    {
+      "id": "KIMDIS-26PROC019596340",
+      "source": "KIMDIS",
+      "title": "Μετάθεση_14947/23-06-2026 Διακήρυξης_«Ψηφιακός Μετασχηματισμός Διαδικασιών Κτήσης Ιθαγένειας».",
+      "buyer": "ΚΟΙΝΩΝΙΑ ΤΗΣ ΠΛΗΡΟΦΟΡΙΑΣ ΑΕ",
+      "buyerCountry": "GR",
+      "cpv": [
+        "80500000-9",
+        "72262000-9",
+        "72000000-5"
+      ],
+      "value": 4248240,
+      "currency": "EUR",
+      "deadline": "2026-09-07",
+      "publicationDate": "2026-08-07",
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019596340"
     },
     {
       "id": "KIMDIS-26PROC019584538",
       "source": "KIMDIS",
-      "title": "ΑΝΟΙΚΤΟΣ ΔΙΕΘΝΗΣ ΗΛΕΚΤΡΟΝΙΚΟΣ ΔΙΑΓΩΝΙΣΜΟΣ [26PROC019584538]",
+      "title": "ΑΝΟΙΚΤΟΣ ΔΙΕΘΝΗΣ ΗΛΕΚΤΡΟΝΙΚΟΣ ΔΙΑΓΩΝΙΣΜΟΣ",
       "buyer": "ΙΝΣΤΙΤΟΥΤΟ ΕΚΠΑΙΔΕΥΤΙΚΗΣ ΠΟΛΙΤΙΚΗΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "72262000-9",
-        "72250000-2",
-        "80533100-0",
-        "80340000-9",
         "80000000-4",
-        "72000000-5"
-      ],
-      "value": 992000,
-      "currency": "EUR",
-      "deadline": "2026-09-07",
-      "publicationDate": "2026-08-05",
-      "url": null
-    },
-    {
-      "id": "KIMDIS-26PROC019583029",
-      "source": "KIMDIS",
-      "title": "ΑΝΟΙΚΤΟΣ ΔΙΕΘΝΗΣ ΗΛΕΚΤΡΟΝΙΚΟΣ ΔΙΑΓΩΝΙΣΜΟΣ [26PROC019583029]",
-      "buyer": "ΙΝΣΤΙΤΟΥΤΟ ΕΚΠΑΙΔΕΥΤΙΚΗΣ ΠΟΛΙΤΙΚΗΣ",
-      "buyerCountry": "GR",
-      "cpv": [
-        "80533100-0",
-        "72262000-9",
         "72000000-5",
-        "80000000-4",
+        "80533100-0",
         "80340000-9",
+        "72262000-9",
         "72250000-2"
       ],
       "value": 992000,
       "currency": "EUR",
       "deadline": "2026-09-07",
       "publicationDate": "2026-08-05",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019584538"
+    },
+    {
+      "id": "KIMDIS-26PROC019583029",
+      "source": "KIMDIS",
+      "title": "ΑΝΟΙΚΤΟΣ ΔΙΕΘΝΗΣ ΗΛΕΚΤΡΟΝΙΚΟΣ ΔΙΑΓΩΝΙΣΜΟΣ",
+      "buyer": "ΙΝΣΤΙΤΟΥΤΟ ΕΚΠΑΙΔΕΥΤΙΚΗΣ ΠΟΛΙΤΙΚΗΣ",
+      "buyerCountry": "GR",
+      "cpv": [
+        "72262000-9",
+        "80533100-0",
+        "72250000-2",
+        "80340000-9",
+        "72000000-5",
+        "80000000-4"
+      ],
+      "value": 992000,
+      "currency": "EUR",
+      "deadline": "2026-09-07",
+      "publicationDate": "2026-08-05",
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019583029"
     },
     {
       "id": "KIMDIS-26PROC019561699",
       "source": "KIMDIS",
-      "title": "ΔΙΑΚΗΡΥΞΗ ΓΙΑ ΤΗΝ ΠΡΟΜΗΘΕΙΑ ΜΕ ΤΙΤΛΟ \"ΔΡΑΣΕΙΣ ΨΗΦΙΑΚΟΥ ΜΕΤΑΣΧΗΜΑΤΙΣΜΟΥ ΔΗΜΟΥ ΗΛΙΟΥΠΟΛΗΣ\" [26PROC019561699]",
+      "title": "ΔΙΑΚΗΡΥΞΗ ΓΙΑ ΤΗΝ ΠΡΟΜΗΘΕΙΑ ΜΕ ΤΙΤΛΟ \"ΔΡΑΣΕΙΣ ΨΗΦΙΑΚΟΥ ΜΕΤΑΣΧΗΜΑΤΙΣΜΟΥ ΔΗΜΟΥ ΗΛΙΟΥΠΟΛΗΣ\"",
       "buyer": "ΔΗΜΟΣ ΗΛΙΟΥΠΟΛΗΣ",
       "buyerCountry": "GR",
       "cpv": [
         "32440000-9",
         "51612000-5",
-        "80533100-0",
         "72268000-1",
-        "33100000-1",
-        "72314000-9",
-        "35125100-7",
+        "71356300-1",
         "44111000-1",
         "72410000-7",
         "72200000-7",
-        "30213100-6",
-        "71356300-1",
-        "31518000-0",
-        "30213500-0",
+        "33100000-1",
+        "35125100-7",
+        "72314000-9",
+        "79418000-7",
+        "80533100-0",
         "51110000-6",
-        "79418000-7"
+        "31518000-0",
+        "30213100-6",
+        "30213500-0"
       ],
       "value": 1635310.71,
       "currency": "EUR",
       "deadline": "2026-09-07",
       "publicationDate": "2026-08-03",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019561699"
     },
     {
       "id": "KIMDIS-26PROC019561564",
       "source": "KIMDIS",
-      "title": "ΠΡΟΚΗΡΥΞΗ ΓΙΑ ΤΗΝ ΠΡΟΜΗΘΕΙΑ ΜΕ ΤΙΤΛΟ \"ΔΡΑΣΕΙΣ ΨΗΦΙΑΚΟΥ ΜΕΤΑΣΧΗΜΑΤΙΣΜΟΥ ΔΗΜΟΥ ΗΛΙΟΥΠΟΛΗΣ\" [26PROC019561564]",
+      "title": "ΠΡΟΚΗΡΥΞΗ ΓΙΑ ΤΗΝ ΠΡΟΜΗΘΕΙΑ ΜΕ ΤΙΤΛΟ \"ΔΡΑΣΕΙΣ ΨΗΦΙΑΚΟΥ ΜΕΤΑΣΧΗΜΑΤΙΣΜΟΥ ΔΗΜΟΥ ΗΛΙΟΥΠΟΛΗΣ\"",
       "buyer": "ΔΗΜΟΣ ΗΛΙΟΥΠΟΛΗΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "80533100-0",
-        "33100000-1",
         "32440000-9",
+        "72268000-1",
         "31518000-0",
         "35125100-7",
-        "71356300-1",
-        "72268000-1",
-        "30213500-0",
         "51612000-5",
-        "72314000-9",
         "72200000-7",
+        "80533100-0",
         "51110000-6",
-        "72410000-7",
+        "30213500-0",
+        "33100000-1",
+        "71356300-1",
+        "72314000-9",
         "44111000-1",
+        "72410000-7",
         "30213100-6",
         "79418000-7"
       ],
@@ -1179,153 +1179,137 @@
       "currency": "EUR",
       "deadline": "2026-09-07",
       "publicationDate": "2026-08-03",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019561564"
     },
     {
       "id": "KIMDIS-26PROC019533392",
       "source": "KIMDIS",
-      "title": "ΔΙΑΚΗΡΥΞΗ ΤΟΥ ΥΠΟΕΡΓΟΥ ΜΕ Α/Α 1 «ΕΠΕΚΤΑΣΗ ΤΗΣ ΛΕΙΤΟΥΡΓΙΑΣ ΤΟΥ ΜΔΑΑΕ» [26PROC019533392]",
+      "title": "ΔΙΑΚΗΡΥΞΗ ΤΟΥ ΥΠΟΕΡΓΟΥ ΜΕ Α/Α 1 «ΕΠΕΚΤΑΣΗ ΤΗΣ ΛΕΙΤΟΥΡΓΙΑΣ ΤΟΥ ΜΔΑΑΕ»",
       "buyer": "ΥΠΟΥΡΓΕΙΟ ΕΡΓΑΣΙΑΣ ΚΑΙ ΚΟΙΝΩΝΙΚΗΣ ΑΣΦΑΛΙΣΗΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "72262000-9",
         "80000000-4",
         "72224000-1",
+        "72000000-5",
         "72246000-1",
-        "72000000-5"
+        "72262000-9"
       ],
       "value": 5291100,
       "currency": "EUR",
       "deadline": "2026-09-10",
       "publicationDate": "2026-07-29",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019533392"
     },
     {
       "id": "KIMDIS-26PROC019533360",
       "source": "KIMDIS",
-      "title": "ΕΝΙΣΧΥΣΗ ΤΗΣ ΛΕΙΤΟΥΡΓΙΑΣ ΤΟΥ ΜΔΑΑΕ ΚΑΙ ΣΤΗ ΔΙΕΥΡΥΝΣΗ ΤΩΝ ΔΥΝΑΤΟΤΗΤΩΝ ΤΟΥ [26PROC019533360]",
+      "title": "ΕΝΙΣΧΥΣΗ ΤΗΣ ΛΕΙΤΟΥΡΓΙΑΣ ΤΟΥ ΜΔΑΑΕ ΚΑΙ ΣΤΗ ΔΙΕΥΡΥΝΣΗ ΤΩΝ ΔΥΝΑΤΟΤΗΤΩΝ ΤΟΥ",
       "buyer": "ΥΠΟΥΡΓΕΙΟ ΕΡΓΑΣΙΑΣ ΚΑΙ ΚΟΙΝΩΝΙΚΗΣ ΑΣΦΑΛΙΣΗΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "72262000-9",
-        "72000000-5",
-        "72224000-1",
         "72246000-1",
-        "80000000-4"
+        "72262000-9",
+        "80000000-4",
+        "72000000-5",
+        "72224000-1"
       ],
       "value": 5291100,
       "currency": "EUR",
       "deadline": "2026-09-10",
       "publicationDate": "2026-07-29",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019533360"
     },
     {
       "id": "KIMDIS-26PROC019597196",
       "source": "KIMDIS",
-      "title": "Διαγωνισμός \"Ολοκληρωμένο Πληροφοριακό Σύστημα Μεταμοσχεύσεων Ιστών & Κυττάρων\" [26PROC019597196]",
+      "title": "Διαγωνισμός \"Ολοκληρωμένο Πληροφοριακό Σύστημα Μεταμοσχεύσεων Ιστών & Κυττάρων\"",
       "buyer": "ΕΘΝΙΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΜΕΤΑΜΟΣΧΕΥΣΕΩΝ",
       "buyerCountry": "GR",
       "cpv": [
+        "72246000-1",
         "72262000-9",
         "72266000-7",
         "72222300-0",
-        "72246000-1",
         "72000000-5"
       ],
       "value": 800000,
       "currency": "EUR",
       "deadline": "2026-09-11",
       "publicationDate": "2026-08-07",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019597196"
     },
     {
       "id": "KIMDIS-26PROC019596496",
       "source": "KIMDIS",
-      "title": "Προκήρυξη Ανοικτού Ηλεκτρονικού Διαγωνισμού με Αρ.Πρωτ.:14233/ΑΣ/05-08-2026 [26PROC019596496]",
-      "buyer": "ΕΘΝΙΚΟ ΔΙΚΤΥΟ ΥΠΟΔΟΜΩΝ ΤΕΧΝΟΛΟΓΙΑΣ ΚΑΙ ΕΡΕΥΝΑΣ ΑΕ",
-      "buyerCountry": "GR",
-      "cpv": [
-        "72224000-1",
-        "72000000-5"
-      ],
-      "value": 682000,
-      "currency": "EUR",
-      "deadline": "2026-09-11",
-      "publicationDate": "2026-08-07",
-      "url": null
-    },
-    {
-      "id": "KIMDIS-26PROC019596152",
-      "source": "KIMDIS",
-      "title": "Διακήρυξη Ανοικτού Ηλεκτρονικού Διαγωνισμού με Αρ.Πρωτ.:14232/ΑΣ/05-08-2026 [26PROC019596152]",
+      "title": "Προκήρυξη Ανοικτού Ηλεκτρονικού Διαγωνισμού με Αρ.Πρωτ.:14233/ΑΣ/05-08-2026",
       "buyer": "ΕΘΝΙΚΟ ΔΙΚΤΥΟ ΥΠΟΔΟΜΩΝ ΤΕΧΝΟΛΟΓΙΑΣ ΚΑΙ ΕΡΕΥΝΑΣ ΑΕ",
       "buyerCountry": "GR",
       "cpv": [
         "72000000-5",
         "72224000-1"
       ],
+      "value": 682000,
+      "currency": "EUR",
+      "deadline": "2026-09-11",
+      "publicationDate": "2026-08-07",
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019596496"
+    },
+    {
+      "id": "KIMDIS-26PROC019596152",
+      "source": "KIMDIS",
+      "title": "Διακήρυξη Ανοικτού Ηλεκτρονικού Διαγωνισμού με Αρ.Πρωτ.:14232/ΑΣ/05-08-2026",
+      "buyer": "ΕΘΝΙΚΟ ΔΙΚΤΥΟ ΥΠΟΔΟΜΩΝ ΤΕΧΝΟΛΟΓΙΑΣ ΚΑΙ ΕΡΕΥΝΑΣ ΑΕ",
+      "buyerCountry": "GR",
+      "cpv": [
+        "72224000-1",
+        "72000000-5"
+      ],
       "value": 682620,
       "currency": "EUR",
       "deadline": "2026-09-11",
       "publicationDate": "2026-08-07",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019596152"
     },
     {
       "id": "KIMDIS-26PROC019595306",
       "source": "KIMDIS",
-      "title": "Προκήρυξη Ανοικτού Ηλεκτρονικού Διαγωνισμού με Αρ.Πρωτ.:14235/ΑΣ/05-08-2026 [26PROC019595306]",
+      "title": "Προκήρυξη Ανοικτού Ηλεκτρονικού Διαγωνισμού με Αρ.Πρωτ.:14235/ΑΣ/05-08-2026",
       "buyer": "ΕΘΝΙΚΟ ΔΙΚΤΥΟ ΥΠΟΔΟΜΩΝ ΤΕΧΝΟΛΟΓΙΑΣ ΚΑΙ ΕΡΕΥΝΑΣ ΑΕ",
       "buyerCountry": "GR",
       "cpv": [
+        "30200000-1",
         "79822500-7",
         "72000000-5",
-        "72212783-1",
-        "30200000-1"
+        "72212783-1"
       ],
       "value": 9300000,
       "currency": "EUR",
       "deadline": "2026-09-11",
       "publicationDate": "2026-08-07",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019595306"
     },
     {
       "id": "KIMDIS-26PROC019595077",
       "source": "KIMDIS",
-      "title": "Διακήρυξη Ανοικτού Ηλεκτρονικού Διαγωνισμού με Αρ.Πρωτ.:14234/ΑΣ/05-08-2026 [26PROC019595077]",
+      "title": "Διακήρυξη Ανοικτού Ηλεκτρονικού Διαγωνισμού με Αρ.Πρωτ.:14234/ΑΣ/05-08-2026",
       "buyer": "ΕΘΝΙΚΟ ΔΙΚΤΥΟ ΥΠΟΔΟΜΩΝ ΤΕΧΝΟΛΟΓΙΑΣ ΚΑΙ ΕΡΕΥΝΑΣ ΑΕ",
       "buyerCountry": "GR",
       "cpv": [
         "72000000-5",
-        "72212783-1",
         "30200000-1",
-        "79822500-7"
+        "79822500-7",
+        "72212783-1"
       ],
       "value": 9300000,
       "currency": "EUR",
       "deadline": "2026-09-11",
       "publicationDate": "2026-08-07",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019595077"
     },
     {
       "id": "KIMDIS-26PROC019555639",
       "source": "KIMDIS",
-      "title": "ΠΡΟΜΗΘΕΙΑ & ΑΝΑΝΕΩΣΗ ΛΟΓΙΣΜΙΚΩΝ ΓΙΑ ΤΙΣ ΑΝΑΓΚΕΣ ΤΩΝ ΣΧΟΛΩΝ ΚΑΙ ΤΗΣ Μ.Ψ.Δ. ΤΟΥ ΠΟΛΥΤΕΧΝΕΙΟΥ ΚΡΗΤΗΣ [26PROC019555639]",
-      "buyer": "ΠΟΛΥΤΕΧΝΕΙΟ ΚΡΗΤΗΣ",
-      "buyerCountry": "GR",
-      "cpv": [
-        "72268000-1",
-        "72260000-5"
-      ],
-      "value": 102300.02,
-      "currency": "EUR",
-      "deadline": "2026-09-14",
-      "publicationDate": "2026-07-31",
-      "url": null
-    },
-    {
-      "id": "KIMDIS-26PROC019554172",
-      "source": "KIMDIS",
-      "title": "Προμήθεια & ανανέωση λογισμικών για τις ανάγκες των Σχολών και της Μ.Ψ.Δ. του Πολυτεχνείου Κρήτης [26PROC019554172]",
+      "title": "ΠΡΟΜΗΘΕΙΑ & ΑΝΑΝΕΩΣΗ ΛΟΓΙΣΜΙΚΩΝ ΓΙΑ ΤΙΣ ΑΝΑΓΚΕΣ ΤΩΝ ΣΧΟΛΩΝ ΚΑΙ ΤΗΣ Μ.Ψ.Δ. ΤΟΥ ΠΟΛΥΤΕΧΝΕΙΟΥ ΚΡΗΤΗΣ",
       "buyer": "ΠΟΛΥΤΕΧΝΕΙΟ ΚΡΗΤΗΣ",
       "buyerCountry": "GR",
       "cpv": [
@@ -1336,18 +1320,34 @@
       "currency": "EUR",
       "deadline": "2026-09-14",
       "publicationDate": "2026-07-31",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019555639"
+    },
+    {
+      "id": "KIMDIS-26PROC019554172",
+      "source": "KIMDIS",
+      "title": "Προμήθεια & ανανέωση λογισμικών για τις ανάγκες των Σχολών και της Μ.Ψ.Δ. του Πολυτεχνείου Κρήτης",
+      "buyer": "ΠΟΛΥΤΕΧΝΕΙΟ ΚΡΗΤΗΣ",
+      "buyerCountry": "GR",
+      "cpv": [
+        "72260000-5",
+        "72268000-1"
+      ],
+      "value": 102300.02,
+      "currency": "EUR",
+      "deadline": "2026-09-14",
+      "publicationDate": "2026-07-31",
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019554172"
     },
     {
       "id": "KIMDIS-26PROC019551667",
       "source": "KIMDIS",
-      "title": "Ενδυνάμωση της ΠΣΑ και Ανάπτυξη της Κοινωνικής Καινοτομίας [26PROC019551667]",
+      "title": "Ενδυνάμωση της ΠΣΑ και Ανάπτυξη της Κοινωνικής Καινοτομίας",
       "buyer": "ΠΕΡΙΦΕΡΕΙΑ ΘΕΣΣΑΛΙΑΣ",
       "buyerCountry": "GR",
       "cpv": [
         "79952000-2",
-        "72000000-5",
         "80000000-4",
+        "72000000-5",
         "79415200-8",
         "79341100-7"
       ],
@@ -1355,31 +1355,31 @@
       "currency": "EUR",
       "deadline": "2026-09-15",
       "publicationDate": "2026-07-30",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019551667"
     },
     {
       "id": "KIMDIS-26PROC019544891",
       "source": "KIMDIS",
-      "title": "Ενδυνάμωση της ΠΣΑ και Ανάπτυξη της Κοινωνικής Καινοτομίας [26PROC019544891]",
+      "title": "Ενδυνάμωση της ΠΣΑ και Ανάπτυξη της Κοινωνικής Καινοτομίας",
       "buyer": "ΠΕΡΙΦΕΡΕΙΑ ΘΕΣΣΑΛΙΑΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "79341100-7",
-        "79415200-8",
-        "72000000-5",
+        "79952000-2",
         "80000000-4",
-        "79952000-2"
+        "72000000-5",
+        "79415200-8",
+        "79341100-7"
       ],
       "value": 2739120,
       "currency": "EUR",
       "deadline": "2026-09-15",
       "publicationDate": "2026-07-30",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019544891"
     },
     {
       "id": "KIMDIS-26PROC019503181",
       "source": "KIMDIS",
-      "title": "ΔΙΑΚΗΡΥΞΗ 1/2026 [26PROC019503181]",
+      "title": "ΔΙΑΚΗΡΥΞΗ 1/2026",
       "buyer": "ΡΥΘΜΙΣΤΙΚΗ ΑΡΧΗ ΑΠΟΒΛΗΤΩΝ ΕΝΕΡΓΕΙΑΣ ΚΑΙ ΥΔΑΤΩΝ",
       "buyerCountry": "GR",
       "cpv": [
@@ -1389,12 +1389,12 @@
       "currency": "EUR",
       "deadline": "2026-09-15",
       "publicationDate": "2026-07-23",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019503181"
     },
     {
       "id": "KIMDIS-26PROC019563810",
       "source": "KIMDIS",
-      "title": "ΔΙΑΚΗΡΥΞΗ ΤΕΧΝΙΚΟΣ ΣΥΜΒΟΥΛΟΣ ΥΠΟΣΤΗΡΙΞΗΣ ΕΥΔ ΠΑΔΚΣ [26PROC019563810]",
+      "title": "ΔΙΑΚΗΡΥΞΗ ΤΕΧΝΙΚΟΣ ΣΥΜΒΟΥΛΟΣ ΥΠΟΣΤΗΡΙΞΗΣ ΕΥΔ ΠΑΔΚΣ",
       "buyer": "ΥΠΟΥΡΓΕΙΟ ΟΙΚΟΝΟΜΙΚΩΝ",
       "buyerCountry": "GR",
       "cpv": [
@@ -1405,12 +1405,12 @@
       "currency": "EUR",
       "deadline": "2026-09-15",
       "publicationDate": "2026-08-03",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019563810"
     },
     {
       "id": "KIMDIS-26PROC019563293",
       "source": "KIMDIS",
-      "title": "ΠΕΡΙΛΗΨΗ ΔΙΑΚΗΡΥΞΗΣ ΤΕΧΝΙΚΟΥ ΣΥΜΒΟΥΛΟΥ ΥΠΟΣΤΗΡΙΞΗΣ ΕΥΔ ΠΑΔΚΣ [26PROC019563293]",
+      "title": "ΠΕΡΙΛΗΨΗ ΔΙΑΚΗΡΥΞΗΣ ΤΕΧΝΙΚΟΥ ΣΥΜΒΟΥΛΟΥ ΥΠΟΣΤΗΡΙΞΗΣ ΕΥΔ ΠΑΔΚΣ",
       "buyer": "ΥΠΟΥΡΓΕΙΟ ΟΙΚΟΝΟΜΙΚΩΝ",
       "buyerCountry": "GR",
       "cpv": [
@@ -1421,12 +1421,12 @@
       "currency": "EUR",
       "deadline": "2026-09-15",
       "publicationDate": "2026-08-03",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019563293"
     },
     {
       "id": "KIMDIS-26PROC019569937",
       "source": "KIMDIS",
-      "title": "ΑΝΑΚΟΙΝΩΣΗ ΑΠΑΝΤΗΣΗΣ ΤΗΣ EAB Α.Ε. ΣΕ ΕΡΩΤΗΜΑ - ΜΕΤΑΘΕΣΗ ΚΑΤΑΛΗΚΤΙΚΗΣ ΗΜΕΡΟΜΗΝΙΑΣ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΩΝ [26PROC019569937]",
+      "title": "ΑΝΑΚΟΙΝΩΣΗ ΑΠΑΝΤΗΣΗΣ ΤΗΣ EAB Α.Ε. ΣΕ ΕΡΩΤΗΜΑ - ΜΕΤΑΘΕΣΗ ΚΑΤΑΛΗΚΤΙΚΗΣ ΗΜΕΡΟΜΗΝΙΑΣ ΥΠΟΒΟΛΗΣ ΠΡΟΣΦΟΡΩΝ",
       "buyer": "ΕΛΛΗΝΙΚΗ ΑΕΡΟΠΟΡΙΚΗ ΒΙΟΜΗΧΑΝΙΑ (Ε.Α.Β.) Α.Ε. (N.43/1975)",
       "buyerCountry": "GR",
       "cpv": [
@@ -1436,27 +1436,27 @@
       "currency": "EUR",
       "deadline": "2026-09-21",
       "publicationDate": "2026-08-04",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019569937"
     },
     {
       "id": "KIMDIS-26PROC019566894",
       "source": "KIMDIS",
-      "title": "ΔΕΑ-526078_ΣΧΕΔΙΑΣΜΟΣ, ΥΛΟΠΟΙΗΣΗ, ΨΗΦΙΑΚΗ ΛΕΙΤΟΥΡΓΙΑ & ΕΠΙΧΕΙΡΗΣΙΑΚΗ ΥΠΟΣΤΗΡΙΞΗ ΤΩΝ ΠΑΓΙΩΝ ΤΟΥ ΑΔΜΗΕ [26PROC019566894]",
+      "title": "ΔΕΑ-526078_ΣΧΕΔΙΑΣΜΟΣ, ΥΛΟΠΟΙΗΣΗ, ΨΗΦΙΑΚΗ ΛΕΙΤΟΥΡΓΙΑ & ΕΠΙΧΕΙΡΗΣΙΑΚΗ ΥΠΟΣΤΗΡΙΞΗ ΤΩΝ ΠΑΓΙΩΝ ΤΟΥ ΑΔΜΗΕ",
       "buyer": "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ ΑΔΜΗΕ ΑΕ",
       "buyerCountry": "GR",
       "cpv": [
-        "72267100-0",
-        "72262000-9",
         "79400000-8",
-        "72246000-1",
         "72512000-7",
-        "79111000-5"
+        "79111000-5",
+        "72246000-1",
+        "72267100-0",
+        "72262000-9"
       ],
       "value": 1736000,
       "currency": "EUR",
       "deadline": "2026-09-21",
       "publicationDate": "2026-08-03",
-      "url": null
+      "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019566894"
     },
     {
       "id": "TED-550400-2026",
@@ -2067,21 +2067,6 @@
       "url": "https://ted.europa.eu/en/notice/-/detail/516984-2026"
     },
     {
-      "id": "TED-517510-2026",
-      "source": "TED",
-      "title": "Greece – Software-related services – Υπηρεσίες συντήρησης, υποστήριξης και αναβάθμισης του Ολοκληρωμένου Πληροφοριακού Συστήματος (ΟΠΣ) στα πλαίσια υποστήριξης των διαδικασιών της νόμιμης μετανάστευσης",
-      "buyer": "ΕΥΡΩΠΑΪΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΔΗΜΟΣΙΟΥ ΔΙΚΑΙΟΥ",
-      "buyerCountry": "GRC",
-      "cpv": [
-        "72260000"
-      ],
-      "value": 597990,
-      "currency": "EUR",
-      "deadline": null,
-      "publicationDate": "2026-07-27",
-      "url": "https://ted.europa.eu/en/notice/-/detail/517510-2026"
-    },
-    {
       "id": "TED-516296-2026",
       "source": "TED",
       "title": "Greece – Documentation services – «Ψηφιοποίηση και τεκμηρίωση αρχείων Εταιρείας Μακεδονικών Σπουδών και δημιουργία Ψηφιακού Μουσείου»",
@@ -2101,6 +2086,21 @@
       "deadline": null,
       "publicationDate": "2026-07-27",
       "url": "https://ted.europa.eu/en/notice/-/detail/516296-2026"
+    },
+    {
+      "id": "TED-517510-2026",
+      "source": "TED",
+      "title": "Greece – Software-related services – Υπηρεσίες συντήρησης, υποστήριξης και αναβάθμισης του Ολοκληρωμένου Πληροφοριακού Συστήματος (ΟΠΣ) στα πλαίσια υποστήριξης των διαδικασιών της νόμιμης μετανάστευσης",
+      "buyer": "ΕΥΡΩΠΑΪΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΔΗΜΟΣΙΟΥ ΔΙΚΑΙΟΥ",
+      "buyerCountry": "GRC",
+      "cpv": [
+        "72260000"
+      ],
+      "value": 597990,
+      "currency": "EUR",
+      "deadline": null,
+      "publicationDate": "2026-07-27",
+      "url": "https://ted.europa.eu/en/notice/-/detail/517510-2026"
     },
     {
       "id": "TED-513012-2026",
@@ -2384,6 +2384,43 @@
       "url": "https://ted.europa.eu/en/notice/-/detail/500770-2026"
     },
     {
+      "id": "TED-500899-2026",
+      "source": "TED",
+      "title": "Greece – Scanning services – ΠΛΗΡΟΦΟΡΙΑΚΟ ΣΥΣΤΗΜΑ ΓΙΑ ΤΗΝ ΟΡΙΟΘΕΤΗΣΗ ΤΩΝ ΥΔΑΤΟΡΕΜΑΤΩΝ",
+      "buyer": "ΤΕΧΝΙΚΟ ΕΠΙΜΕΛΗΤΗΡΙΟ ΕΛΛΑΔΑΣ",
+      "buyerCountry": "GRC",
+      "cpv": [
+        "79999100",
+        "72000000",
+        "71351612",
+        "38120000",
+        "38292000"
+      ],
+      "value": 79812400,
+      "currency": "EUR",
+      "deadline": null,
+      "publicationDate": "2026-07-20",
+      "url": "https://ted.europa.eu/en/notice/-/detail/500899-2026"
+    },
+    {
+      "id": "TED-500651-2026",
+      "source": "TED",
+      "title": "Greece – Photogrammetry services – Εντοπισμός αυθαίρετης δόμησης με σύγχρονα τεχνολογικά μέσα",
+      "buyer": "ΤΕΧΝΙΚΟ ΕΠΙΜΕΛΗΤΗΡΙΟ ΕΛΛΑΔΑΣ",
+      "buyerCountry": "GRC",
+      "cpv": [
+        "71355100",
+        "71354100",
+        "72500000",
+        "72000000"
+      ],
+      "value": 93022265.8,
+      "currency": "EUR",
+      "deadline": null,
+      "publicationDate": "2026-07-20",
+      "url": "https://ted.europa.eu/en/notice/-/detail/500651-2026"
+    },
+    {
       "id": "TED-501257-2026",
       "source": "TED",
       "title": "Greece – Telemetry and control equipment – Αναβάθμιση Υποδομών Ασφάλειας των 10 μεγαλύτερων σιδηροδρομικών Σηράγγων του Ο.Σ.Ε με χρήση έξυπνων ΙοΤ συστημάτων με στόχο την επίλυση επιτακτικών ζητημάτων ασφάλειας των σηράγγων",
@@ -2410,43 +2447,6 @@
       "deadline": null,
       "publicationDate": "2026-07-20",
       "url": "https://ted.europa.eu/en/notice/-/detail/501257-2026"
-    },
-    {
-      "id": "TED-500651-2026",
-      "source": "TED",
-      "title": "Greece – Photogrammetry services – Εντοπισμός αυθαίρετης δόμησης με σύγχρονα τεχνολογικά μέσα",
-      "buyer": "ΤΕΧΝΙΚΟ ΕΠΙΜΕΛΗΤΗΡΙΟ ΕΛΛΑΔΑΣ",
-      "buyerCountry": "GRC",
-      "cpv": [
-        "71355100",
-        "71354100",
-        "72500000",
-        "72000000"
-      ],
-      "value": 93022265.8,
-      "currency": "EUR",
-      "deadline": null,
-      "publicationDate": "2026-07-20",
-      "url": "https://ted.europa.eu/en/notice/-/detail/500651-2026"
-    },
-    {
-      "id": "TED-500899-2026",
-      "source": "TED",
-      "title": "Greece – Scanning services – ΠΛΗΡΟΦΟΡΙΑΚΟ ΣΥΣΤΗΜΑ ΓΙΑ ΤΗΝ ΟΡΙΟΘΕΤΗΣΗ ΤΩΝ ΥΔΑΤΟΡΕΜΑΤΩΝ",
-      "buyer": "ΤΕΧΝΙΚΟ ΕΠΙΜΕΛΗΤΗΡΙΟ ΕΛΛΑΔΑΣ",
-      "buyerCountry": "GRC",
-      "cpv": [
-        "79999100",
-        "72000000",
-        "71351612",
-        "38120000",
-        "38292000"
-      ],
-      "value": 79812400,
-      "currency": "EUR",
-      "deadline": null,
-      "publicationDate": "2026-07-20",
-      "url": "https://ted.europa.eu/en/notice/-/detail/500899-2026"
     },
     {
       "id": "TED-495821-2026",
@@ -2640,6 +2640,21 @@
       "url": "https://ted.europa.eu/en/notice/-/detail/485955-2026"
     },
     {
+      "id": "TED-486960-2026",
+      "source": "TED",
+      "title": "Greece – IT services: consulting, software development, Internet and support – «Υπηρεσίες Επέκτασης και Υποστήριξης του συστήματος διαχείρισης ραντεβού και εκτέλεσης εμβολιασμών για την εφαρμογή νέων διαδικασιών εμβολιασμού, στο πλαίσιο του Εθνικού Προγράμματος Εμβολιασμού κατά του COVID-19», με Κωδ. ΟΠΣ: 5226201.",
+      "buyer": "ΚΟΙΝΩΝΙΑ ΤΗΣ ΠΛΗΡΟΦΟΡΙΑΣ Μ.Α.Ε. (ΚτΠ ΜΑΕ)",
+      "buyerCountry": "GRC",
+      "cpv": [
+        "72000000"
+      ],
+      "value": 5350000,
+      "currency": "EUR",
+      "deadline": null,
+      "publicationDate": "2026-07-14",
+      "url": "https://ted.europa.eu/en/notice/-/detail/486960-2026"
+    },
+    {
       "id": "TED-484000-2026",
       "source": "TED",
       "title": "Greece – Software development services – «Ψηφιακές εφαρμογές Πολιτικής Προστασίας και συναφείς υπηρεσίες»",
@@ -2660,21 +2675,6 @@
       "deadline": null,
       "publicationDate": "2026-07-14",
       "url": "https://ted.europa.eu/en/notice/-/detail/484000-2026"
-    },
-    {
-      "id": "TED-486960-2026",
-      "source": "TED",
-      "title": "Greece – IT services: consulting, software development, Internet and support – «Υπηρεσίες Επέκτασης και Υποστήριξης του συστήματος διαχείρισης ραντεβού και εκτέλεσης εμβολιασμών για την εφαρμογή νέων διαδικασιών εμβολιασμού, στο πλαίσιο του Εθνικού Προγράμματος Εμβολιασμού κατά του COVID-19», με Κωδ. ΟΠΣ: 5226201.",
-      "buyer": "ΚΟΙΝΩΝΙΑ ΤΗΣ ΠΛΗΡΟΦΟΡΙΑΣ Μ.Α.Ε. (ΚτΠ ΜΑΕ)",
-      "buyerCountry": "GRC",
-      "cpv": [
-        "72000000"
-      ],
-      "value": 5350000,
-      "currency": "EUR",
-      "deadline": null,
-      "publicationDate": "2026-07-14",
-      "url": "https://ted.europa.eu/en/notice/-/detail/486960-2026"
     },
     {
       "id": "TED-480521-2026",
