@@ -40,6 +40,27 @@ function firstText(multilingual) {
   return val ?? "";
 }
 
+// eForms fields can come back as a bare scalar, an array (take the first
+// entry), or a nested object (take the first value) - unwrap to a scalar.
+function unwrap(value) {
+  if (value == null) return null;
+  if (Array.isArray(value)) return value.length ? unwrap(value[0]) : null;
+  if (typeof value === "object") {
+    const firstKey = Object.keys(value)[0];
+    return firstKey ? unwrap(value[firstKey]) : null;
+  }
+  return value;
+}
+
+// Extract a plain YYYY-MM-DD string from whatever shape a date field has.
+function toDateString(value) {
+  const scalar = unwrap(value);
+  if (scalar == null) return null;
+  const str = String(scalar);
+  const match = str.match(/\d{4}-\d{2}-\d{2}/);
+  return match ? match[0] : str;
+}
+
 function pastDate(days) {
   const d = new Date();
   d.setUTCDate(d.getUTCDate() - days);
@@ -86,17 +107,20 @@ function normalizeNotice(raw) {
       ? `https://ted.europa.eu/en/notice/-/detail/${raw["publication-number"]}`
       : null);
 
+  const cpvRaw = raw["classification-cpv"];
+  const cpv = Array.isArray(cpvRaw) ? cpvRaw.map((c) => unwrap(c)) : unwrap(cpvRaw);
+
   return {
-    id: raw["publication-number"] ?? null,
+    id: unwrap(raw["publication-number"]),
     source: "TED",
     title: firstText(raw["notice-title"]),
     buyer: firstText(raw["buyer-name"]),
-    buyerCountry: raw["buyer-country"] ?? null,
-    cpv: raw["classification-cpv"] ?? null,
-    value: raw["total-value"] ?? null,
-    currency: raw["total-value-cur"] ?? null,
-    deadline: raw["deadline"] ?? null,
-    publicationDate: raw["publication-date"] ?? null,
+    buyerCountry: unwrap(raw["buyer-country"]),
+    cpv,
+    value: unwrap(raw["total-value"]),
+    currency: unwrap(raw["total-value-cur"]),
+    deadline: toDateString(raw["deadline"]),
+    publicationDate: toDateString(raw["publication-date"]),
     url: link,
   };
 }
@@ -124,6 +148,9 @@ async function main() {
     totalNoticeCount = body.totalNoticeCount ?? totalNoticeCount;
 
     console.log(`Page ${page}: ${batch.length} notices (total reported: ${totalNoticeCount ?? "?"})`);
+    if (page === 1 && batch[0]) {
+      console.log("Sample raw notice (for shape debugging):", JSON.stringify(batch[0], null, 2));
+    }
 
     for (const raw of batch) notices.push(normalizeNotice(raw));
 
