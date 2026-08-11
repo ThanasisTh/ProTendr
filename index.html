@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ProTendr</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ProTendr</h1>
+    <p class="subtitle">Open EU/Greek tenders, filtered to CPV codes worth my time.</p>
+    <p id="meta" class="meta"></p>
+  </header>
+
+  <section class="controls">
+    <input id="search" type="search" placeholder="Search title or buyer…" />
+    <select id="sort">
+      <option value="deadline">Sort: deadline (soonest first)</option>
+      <option value="published">Sort: published (newest first)</option>
+      <option value="value">Sort: value (highest first)</option>
+    </select>
+    <label class="hide-seen">
+      <input id="hideSeen" type="checkbox" />
+      Hide already-seen
+    </label>
+  </section>
+
+  <main>
+    <table id="tenders">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Title</th>
+          <th>Buyer</th>
+          <th>CPV</th>
+          <th>Value</th>
+          <th>Deadline</th>
+          <th>Published</th>
+        </tr>
+      </thead>
+      <tbody id="tenders-body"></tbody>
+    </table>
+    <p id="empty" class="empty" hidden>No open notices match right now.</p>
+  </main>
+
+  <footer>
+    <p>Source: <a href="https://docs.ted.europa.eu/api/latest/" target="_blank" rel="noopener">TED Search API</a>.
+       Watch list is <a href="config/watch.json" target="_blank" rel="noopener">config/watch.json</a>.
+       Data refreshed on a schedule by GitHub Actions &mdash; see <a href="https://github.com/thanasisth/protendr" target="_blank" rel="noopener">source</a>.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

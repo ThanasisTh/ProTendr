@@ -1,0 +1,13 @@
+{
+  "_comment": "CPV codes to watch. Edit this list and push — no code changes needed. Full CPV list: https://simap.ted.europa.eu/web/simap/cpv",
+  "buyerCountry": "GRC",
+  "lookbackDays": 30,
+  "cpvCodes": [
+    { "code": "72000000", "label": "IT services: consulting, software development, Internet and support" },
+    { "code": "72200000", "label": "Software programming and consultancy services" },
+    { "code": "72212000", "label": "Programming services of application software" },
+    { "code": "72224000", "label": "Systems and technical consultancy services" },
+    { "code": "72413000", "label": "World-wide web (WWW) site design services" },
+    { "code": "72316000", "label": "Data analysis services" }
+  ]
+}
