@@ -31,11 +31,17 @@ const FIELDS = [
   "links",
 ];
 
+// Preferred language order for display text: English, then Greek, then
+// whatever the notice happens to include (TED returns whichever language(s)
+// the buyer submitted, not necessarily English).
+const LANG_PREFERENCE = ["eng", "ell", "en", "el"];
+
 function firstText(multilingual) {
   if (!multilingual) return "";
   if (typeof multilingual === "string") return multilingual;
-  const firstLang = Object.keys(multilingual)[0];
-  const val = firstLang ? multilingual[firstLang] : null;
+  const keys = Object.keys(multilingual);
+  const lang = LANG_PREFERENCE.find((l) => keys.includes(l)) ?? keys[0];
+  const val = lang ? multilingual[lang] : null;
   if (Array.isArray(val)) return val[0] ?? "";
   return val ?? "";
 }
@@ -108,7 +114,8 @@ function normalizeNotice(raw) {
       : null);
 
   const cpvRaw = raw["classification-cpv"];
-  const cpv = Array.isArray(cpvRaw) ? cpvRaw.map((c) => unwrap(c)) : unwrap(cpvRaw);
+  const cpvList = Array.isArray(cpvRaw) ? cpvRaw.map((c) => unwrap(c)) : [unwrap(cpvRaw)];
+  const cpv = [...new Set(cpvList.filter(Boolean))];
 
   return {
     id: unwrap(raw["publication-number"]),
@@ -148,9 +155,6 @@ async function main() {
     totalNoticeCount = body.totalNoticeCount ?? totalNoticeCount;
 
     console.log(`Page ${page}: ${batch.length} notices (total reported: ${totalNoticeCount ?? "?"})`);
-    if (page === 1 && batch[0]) {
-      console.log("Sample raw notice (for shape debugging):", JSON.stringify(batch[0], null, 2));
-    }
 
     for (const raw of batch) notices.push(normalizeNotice(raw));
 
