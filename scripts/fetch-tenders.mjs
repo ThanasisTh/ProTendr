@@ -207,6 +207,12 @@ async function fetchKimdisPage({ cpv, dateFrom, dateTo, page }) {
   } catch {
     throw new Error(`KIMDIS API returned non-JSON (status ${res.status}): ${bodyText.slice(0, 500)}`);
   }
+  // KIMDIS returns HTTP 404 (not a 200 with empty content) when a query
+  // simply has no matches - that's an empty page, not a failure.
+  if (res.status === 404 && body.message === "No notices found for the given criteria") {
+    return { content: [], totalElements: 0, last: true };
+  }
+
   if (!res.ok) {
     console.error(`KIMDIS API error (status ${res.status}), full body follows:`);
     console.error(JSON.stringify(body, null, 2));
