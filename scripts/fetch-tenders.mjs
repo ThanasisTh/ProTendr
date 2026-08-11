@@ -70,9 +70,9 @@ async function fetchPage({ query, page }) {
   }
 
   if (!res.ok) {
-    throw new Error(
-      `TED API error (status ${res.status}): ${JSON.stringify(body).slice(0, 1000)}`
-    );
+    console.error(`TED API error (status ${res.status}), full body follows:`);
+    console.error(JSON.stringify(body, null, 2));
+    throw new Error(`TED API error (status ${res.status}) — see full body logged above`);
   }
 
   return body;
