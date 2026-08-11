@@ -1,7 +1,5 @@
 # ProTendr
 
-A zero-cost proof of concept for concept #1 in [Vault's app-concepts doc](https://github.com/ThanasisTh/Vault/blob/main/projects/App%20Concepts%20Built%20on%20Greek%20Open%20Data.md) — a tender radar — scoped down for personal use: watch a set of CPV codes and see what's open, without paying for hosting, a database, or LLM extraction.
-
 ## How it works
 
 ```
