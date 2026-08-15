@@ -137,6 +137,13 @@ td a:hover { text-decoration: underline; }
   vertical-align: middle;
 }
 
+.related-acts {
+  margin-top: 0.2rem;
+  font-size: 0.75rem;
+}
+.related-acts a { color: var(--muted); }
+.related-acts a:hover { color: var(--accent); }
+
 .deadline-soon { color: var(--stale-fg); font-weight: 600; }
 
 .empty { color: var(--muted); text-align: center; padding: 2rem 0; }

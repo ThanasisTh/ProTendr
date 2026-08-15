@@ -1,4 +1,4 @@
-# ProTendr
+# TenderLookup
 
 ## How it works
 
@@ -38,6 +38,7 @@ Current defaults watch Greek buyers for IT/software/data-services CPV codes, as 
 - Sort by deadline or published date (either direction) or value — including lowest-value-first, useful for surfacing smaller jobs that a solo dev might actually take on rather than the multi-million-euro framework contracts that dominate by value.
 - "Hide already-seen" combines with everything else; "Reset filters" clears all of it back to the default (soonest deadline first).
 - The table becomes a stack of cards below ~700px so it's usable on a phone.
+- Each KIMDIS notice links to its public detail page, plus a small "πράξη" link per linked commitment request (`approvedRequests` in the API) — the notice page itself only shows the invitation, not the budget-commitment act(s) that authorized it. A notice can have more than one; each gets its own link, numbered. Same detail-page URL pattern works for both (confirmed empirically: request-type ΑΔΑΜ codes render the same as notice-type ones).
 
 ## Known limitations of this prototype
 

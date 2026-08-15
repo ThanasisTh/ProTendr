@@ -1,4 +1,4 @@
-const SEEN_KEY = "protendr:seenIds";
+const SEEN_KEY = "tenderlookup:seenIds";
 const STALE_HOURS = 18; // poll runs every 6h; flag if data is clearly stuck
 
 function loadSeen() {
@@ -72,9 +72,18 @@ function render(notices, seen) {
       ? `<a href="${n.url}" target="_blank" rel="noopener">${escapeHtml(n.title || "(untitled)")}</a>`
       : escapeHtml(n.title || "(untitled)");
 
+    // KIMDIS notice pages only show the invitation itself, not the
+    // underlying commitment request(s) (πράξη) that authorized it.
+    const actsHtml = (n.relatedActs ?? [])
+      .map(
+        (a, i) =>
+          `<a href="${a.url}" target="_blank" rel="noopener" title="Σχετική πράξη (αίτημα ανάληψης υποχρέωσης)">πράξη${n.relatedActs.length > 1 ? ` ${i + 1}` : ""}</a>`
+      )
+      .join(" · ");
+
     tr.innerHTML = `
       <td data-label="">${isNew ? "✨ new" : ""}</td>
-      <td data-label="Title">${titleHtml}<span class="source-tag">${n.source}</span></td>
+      <td data-label="Title">${titleHtml}<span class="source-tag">${n.source}</span>${actsHtml ? `<div class="related-acts">${actsHtml}</div>` : ""}</td>
       <td data-label="Buyer">${escapeHtml(n.buyer || "—")}</td>
       <td data-label="CPV">${escapeHtml(fmtCpv(n.cpv))}</td>
       <td data-label="Value">${escapeHtml(fmtValue(n.value, n.currency))}</td>

@@ -162,6 +162,14 @@ async function fetchTedNotices(config) {
 
 const KIMDIS_ENDPOINT = "https://cerpp.eprocurement.gov.gr/khmdhs-opendata/notice";
 
+// Confirmed empirically (unprotected/public, no login) for both notice
+// ("...PROC...") and request ("...REQ...") reference numbers.
+function kimdisDetailUrl(referenceNumber) {
+  return referenceNumber
+    ? `https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=${referenceNumber}`
+    : null;
+}
+
 function normalizeKimdisNotice(raw) {
   const cpvSet = new Set();
   for (const detail of raw.objectDetails ?? []) {
@@ -173,11 +181,13 @@ function normalizeKimdisNotice(raw) {
   const currency = raw.objectDetails?.[0]?.currency?.key ?? "EUR";
   const value = raw.totalCostWithVAT ?? raw.totalCostWithoutVAT ?? null;
 
-  // Confirmed empirically (unprotected/public, returns the notice content,
-  // no login): https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=<ADAM>
-  const url = raw.referenceNumber
-    ? `https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=${raw.referenceNumber}`
-    : null;
+  // KIMDIS notice pages only surface the invitation itself, not the
+  // underlying commitment request(s) (πράξη ανάληψης υποχρέωσης) that
+  // authorized it - link those separately. A notice can have more than one.
+  const relatedActs = (raw.approvedRequests ?? [])
+    .map((r) => r?.code)
+    .filter(Boolean)
+    .map((code) => ({ code, url: kimdisDetailUrl(code) }));
 
   return {
     id: `KIMDIS-${raw.referenceNumber}`,
@@ -190,7 +200,8 @@ function normalizeKimdisNotice(raw) {
     currency,
     deadline: toDateString(raw.finalSubmissionDate),
     publicationDate: toDateString(raw.submissionDate),
-    url,
+    url: kimdisDetailUrl(raw.referenceNumber),
+    relatedActs,
   };
 }
 
