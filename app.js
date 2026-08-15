@@ -1,4 +1,5 @@
 const SEEN_KEY = "tenderlookup:seenIds";
+const EXCLUDE_KEY = "tenderlookup:excludeKeywords";
 const STALE_HOURS = 18; // poll runs every 6h; flag if data is clearly stuck
 
 function loadSeen() {
@@ -11,6 +12,24 @@ function loadSeen() {
 
 function saveSeen(ids) {
   localStorage.setItem(SEEN_KEY, JSON.stringify([...ids]));
+}
+
+// Comma-separated exclude terms are persisted (unlike the other filters) -
+// this one's meant to be a set-once-and-forget noise blocker, not something
+// worth retyping every visit.
+function loadExclude() {
+  return localStorage.getItem(EXCLUDE_KEY) ?? "";
+}
+
+function saveExclude(value) {
+  localStorage.setItem(EXCLUDE_KEY, value);
+}
+
+function parseKeywords(raw) {
+  return raw
+    .split(",")
+    .map((s) => s.trim().toLowerCase())
+    .filter(Boolean);
 }
 
 function fmtValue(value, currency) {
@@ -94,7 +113,7 @@ function render(notices, seen) {
   }
 }
 
-function applyFilters(all, { search, sort, source, cpv, minValue, maxValue, hideSeen, seen }) {
+function applyFilters(all, { search, exclude, sort, source, cpv, minValue, maxValue, hideSeen, seen }) {
   let list = all;
 
   const q = search.trim().toLowerCase();
@@ -104,6 +123,14 @@ function applyFilters(all, { search, sort, source, cpv, minValue, maxValue, hide
         (n.title || "").toLowerCase().includes(q) ||
         (n.buyer || "").toLowerCase().includes(q)
     );
+  }
+
+  const excludeTerms = parseKeywords(exclude ?? "");
+  if (excludeTerms.length) {
+    list = list.filter((n) => {
+      const haystack = `${n.title || ""} ${n.buyer || ""}`.toLowerCase();
+      return !excludeTerms.some((term) => haystack.includes(term));
+    });
   }
 
   if (source) {
@@ -170,6 +197,7 @@ function populateCpvFilter(cpvCodes) {
 async function main() {
   const metaEl = document.getElementById("meta");
   const searchEl = document.getElementById("search");
+  const excludeEl = document.getElementById("exclude");
   const sortEl = document.getElementById("sort");
   const sourceEl = document.getElementById("source");
   const cpvEl = document.getElementById("cpv");
@@ -191,6 +219,7 @@ async function main() {
   const seen = loadSeen();
   const all = data.notices ?? [];
   populateCpvFilter(data.watch?.cpvCodes);
+  excludeEl.value = loadExclude();
 
   if (data.generatedAt) {
     const ageHours = (Date.now() - new Date(data.generatedAt).getTime()) / 3_600_000;
@@ -206,6 +235,7 @@ async function main() {
   function refresh() {
     const filtered = applyFilters(all, {
       search: searchEl.value,
+      exclude: excludeEl.value,
       sort: sortEl.value,
       source: sourceEl.value,
       cpv: cpvEl.value,
@@ -217,13 +247,16 @@ async function main() {
     render(filtered, seen);
   }
 
-  for (const el of [searchEl, sortEl, sourceEl, cpvEl, minValueEl, maxValueEl, hideSeenEl]) {
+  for (const el of [searchEl, excludeEl, sortEl, sourceEl, cpvEl, minValueEl, maxValueEl, hideSeenEl]) {
     el.addEventListener("input", refresh);
     el.addEventListener("change", refresh);
   }
+  excludeEl.addEventListener("input", () => saveExclude(excludeEl.value));
 
   resetEl.addEventListener("click", () => {
     searchEl.value = "";
+    excludeEl.value = "";
+    saveExclude("");
     sortEl.value = "deadline-asc";
     sourceEl.value = "";
     cpvEl.value = "";

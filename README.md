@@ -35,6 +35,7 @@ Current defaults watch Greek buyers for IT/software/data-services CPV codes, as 
 ## Filtering and sorting on the page
 
 - Free-text search over title/buyer, source (TED/KIMDIS), CPV code (dropdown built from `config/watch.json` at load time), and a value range (min/max €).
+- Exclude keywords (comma-separated, matched against title/buyer) filters *out* anything matching — unlike the other filters this one is persisted in the browser, since it's meant as a set-once noise blocker (e.g. `audit, camera, hardware`) rather than something to retype every visit. "Reset filters" clears it too.
 - Sort by deadline or published date (either direction) or value — including lowest-value-first, useful for surfacing smaller jobs that a solo dev might actually take on rather than the multi-million-euro framework contracts that dominate by value.
 - "Hide already-seen" combines with everything else; "Reset filters" clears all of it back to the default (soonest deadline first).
 - The table becomes a stack of cards below ~700px so it's usable on a phone.
