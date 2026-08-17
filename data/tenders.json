@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T18:51:39.885Z",
+  "generatedAt": "2026-08-17T02:00:06.033Z",
   "watch": {
     "_comment": "CPV codes to watch. Edit this list and push — no code changes needed. checkDigit is required for the KIMDIS source (empirically confirmed against the live API, since the EU's own published check-digit formula is known-broken); TED doesn't need it. Full CPV list: https://simap.ted.europa.eu/web/simap/cpv",
     "_noiseNote": "72000000 and 72224000 are the two biggest sources of irrelevant hits (hardware procurement, audits, construction, generic consulting frameworks riding along as a minor tag on a big multi-code notice) - kept anyway because removing them loses far more true positives than false ones. 72224000 specifically is project-management/advisory work, not coding - drop it if you only want build work.",
@@ -73,7 +73,7 @@
       }
     ]
   },
-  "count": 124,
+  "count": 126,
   "notices": [
     {
       "id": "KIMDIS-26PROC019609926",
@@ -200,12 +200,12 @@
       "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019595975",
       "relatedActs": [
         {
-          "code": "26REQ019590448",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019590448"
-        },
-        {
           "code": "26REQ019590503",
           "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019590503"
+        },
+        {
+          "code": "26REQ019590448",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019590448"
         }
       ]
     },
@@ -238,8 +238,8 @@
       "buyerCountry": "GR",
       "cpv": [
         "72261000-2",
-        "80533100-0",
-        "48613000-8"
+        "48613000-8",
+        "80533100-0"
       ],
       "value": 15500,
       "currency": "EUR",
@@ -431,8 +431,8 @@
       "buyer": "ΔΗΜΟΣ ΣΠΕΤΣΩΝ",
       "buyerCountry": "GR",
       "cpv": [
-        "72261000-2",
-        "72262000-9"
+        "72262000-9",
+        "72261000-2"
       ],
       "value": 6559.6,
       "currency": "EUR",
@@ -591,8 +591,8 @@
       "buyer": "ΓΕΝΙΚΟ ΝΟΣΟΚΟΜΕΙΟ ΔΙΔΥΜΟΤΕΙΧΟΥ",
       "buyerCountry": "GR",
       "cpv": [
-        "50312600-1",
-        "72261000-2"
+        "72261000-2",
+        "50312600-1"
       ],
       "value": 244802.96,
       "currency": "EUR",
@@ -936,33 +936,15 @@
       "url": "https://ted.europa.eu/en/notice/-/detail/503058-2026"
     },
     {
-      "id": "TED-497650-2026",
-      "source": "TED",
-      "title": "Greece – Advertising and marketing services – Έγκριση διενέργειας διαγωνισμού άνω των ορίων για την Παροχή Υπηρεσιών Υλοποίησης της Πράξης EpirusMedEye (MIS 6010984) «Enhancing Healthcare Access in Municipality of Dropull through Greece-Albania Cooperation Background» του Προγράμματος «Interreg VI-A IPA Greece Albania» Συνολικού Προϋπολογισμού: €320.886,00 (συμπ. ΦΠΑ) σε 2 τμηματα",
-      "buyer": "ΕΠΙΤΕΛΙΚΗ ΔΟΜΗ ΕΣΠΑ ΥΠΟΥΡΓΕΙΟΥ ΥΓΕΙΑΣ",
-      "buyerCountry": "GRC",
-      "cpv": [
-        "79340000",
-        "79952000",
-        "72220000",
-        "80521000"
-      ],
-      "value": 258779.04,
-      "currency": "EUR",
-      "deadline": "2026-09-07",
-      "publicationDate": "2026-07-17",
-      "url": "https://ted.europa.eu/en/notice/-/detail/497650-2026"
-    },
-    {
       "id": "KIMDIS-26PROC019596442",
       "source": "KIMDIS",
       "title": "Μετάθεση_14947/23-06-2026 Διακήρυξης_«Ψηφιακός Μετασχηματισμός Διαδικασιών Κτήσης Ιθαγένειας».",
       "buyer": "ΚΟΙΝΩΝΙΑ ΤΗΣ ΠΛΗΡΟΦΟΡΙΑΣ ΑΕ",
       "buyerCountry": "GR",
       "cpv": [
+        "80500000-9",
         "72000000-5",
-        "72262000-9",
-        "80500000-9"
+        "72262000-9"
       ],
       "value": 4248240,
       "currency": "EUR",
@@ -1006,12 +988,12 @@
       "buyer": "ΙΝΣΤΙΤΟΥΤΟ ΕΚΠΑΙΔΕΥΤΙΚΗΣ ΠΟΛΙΤΙΚΗΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "72000000-5",
-        "72250000-2",
-        "80000000-4",
         "80340000-9",
-        "72262000-9",
-        "80533100-0"
+        "72250000-2",
+        "80533100-0",
+        "72000000-5",
+        "80000000-4",
+        "72262000-9"
       ],
       "value": 992000,
       "currency": "EUR",
@@ -1032,10 +1014,10 @@
       "buyer": "ΙΝΣΤΙΤΟΥΤΟ ΕΚΠΑΙΔΕΥΤΙΚΗΣ ΠΟΛΙΤΙΚΗΣ",
       "buyerCountry": "GR",
       "cpv": [
+        "80000000-4",
+        "72250000-2",
         "72262000-9",
         "72000000-5",
-        "72250000-2",
-        "80000000-4",
         "80533100-0",
         "80340000-9"
       ],
@@ -1058,21 +1040,21 @@
       "buyer": "ΔΗΜΟΣ ΗΛΙΟΥΠΟΛΗΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "35125100-7",
-        "51612000-5",
-        "72200000-7",
-        "72314000-9",
-        "31518000-0",
-        "32440000-9",
-        "33100000-1",
-        "51110000-6",
         "71356300-1",
+        "33100000-1",
+        "44111000-1",
+        "32440000-9",
+        "72314000-9",
         "72268000-1",
-        "80533100-0",
         "79418000-7",
+        "51612000-5",
+        "80533100-0",
         "30213500-0",
         "30213100-6",
-        "44111000-1",
+        "35125100-7",
+        "51110000-6",
+        "31518000-0",
+        "72200000-7",
         "72410000-7"
       ],
       "value": 1635310.71,
@@ -1094,22 +1076,22 @@
       "buyer": "ΔΗΜΟΣ ΗΛΙΟΥΠΟΛΗΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "32440000-9",
-        "51612000-5",
+        "30213100-6",
+        "35125100-7",
         "72268000-1",
+        "51612000-5",
+        "32440000-9",
+        "44111000-1",
+        "71356300-1",
         "72314000-9",
         "79418000-7",
-        "33100000-1",
-        "71356300-1",
-        "35125100-7",
         "72200000-7",
-        "80533100-0",
-        "44111000-1",
-        "30213100-6",
-        "30213500-0",
-        "51110000-6",
         "72410000-7",
-        "31518000-0"
+        "33100000-1",
+        "80533100-0",
+        "31518000-0",
+        "51110000-6",
+        "30213500-0"
       ],
       "value": 1635310.71,
       "currency": "EUR",
@@ -1173,10 +1155,10 @@
       "buyerCountry": "GR",
       "cpv": [
         "72262000-9",
+        "80000000-4",
         "72224000-1",
         "72000000-5",
-        "72246000-1",
-        "80000000-4"
+        "72246000-1"
       ],
       "value": 5291100,
       "currency": "EUR",
@@ -1197,10 +1179,10 @@
       "buyer": "ΥΠΟΥΡΓΕΙΟ ΕΡΓΑΣΙΑΣ ΚΑΙ ΚΟΙΝΩΝΙΚΗΣ ΑΣΦΑΛΙΣΗΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "72246000-1",
         "72224000-1",
-        "80000000-4",
+        "72246000-1",
         "72262000-9",
+        "80000000-4",
         "72000000-5"
       ],
       "value": 5291100,
@@ -1222,11 +1204,11 @@
       "buyer": "ΔΗΜΟΣ ΚΙΛΕΛΕΡ",
       "buyerCountry": "GR",
       "cpv": [
-        "64200000-8",
-        "48000000-8",
-        "30200000-1",
-        "32500000-8",
         "51000000-9",
+        "32500000-8",
+        "64200000-8",
+        "30200000-1",
+        "48000000-8",
         "72000000-5"
       ],
       "value": 6748.08,
@@ -1240,16 +1222,16 @@
           "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019604916"
         },
         {
-          "code": "26REQ019614236",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019614236"
-        },
-        {
           "code": "26REQ019604934",
           "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019604934"
         },
         {
           "code": "26REQ019604966",
           "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019604966"
+        },
+        {
+          "code": "26REQ019614236",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019614236"
         }
       ]
     },
@@ -1260,11 +1242,11 @@
       "buyer": "ΕΘΝΙΚΟΣ ΟΡΓΑΝΙΣΜΟΣ ΜΕΤΑΜΟΣΧΕΥΣΕΩΝ",
       "buyerCountry": "GR",
       "cpv": [
+        "72222300-0",
+        "72000000-5",
         "72246000-1",
         "72262000-9",
-        "72266000-7",
-        "72000000-5",
-        "72222300-0"
+        "72266000-7"
       ],
       "value": 800000,
       "currency": "EUR",
@@ -1285,8 +1267,8 @@
       "buyer": "ΕΘΝΙΚΟ ΔΙΚΤΥΟ ΥΠΟΔΟΜΩΝ ΤΕΧΝΟΛΟΓΙΑΣ ΚΑΙ ΕΡΕΥΝΑΣ ΑΕ",
       "buyerCountry": "GR",
       "cpv": [
-        "72000000-5",
-        "72224000-1"
+        "72224000-1",
+        "72000000-5"
       ],
       "value": 682000,
       "currency": "EUR",
@@ -1330,8 +1312,8 @@
       "buyerCountry": "GR",
       "cpv": [
         "30200000-1",
-        "79822500-7",
         "72212783-1",
+        "79822500-7",
         "72000000-5"
       ],
       "value": 9300000,
@@ -1354,8 +1336,8 @@
       "buyerCountry": "GR",
       "cpv": [
         "72000000-5",
-        "72212783-1",
         "79822500-7",
+        "72212783-1",
         "30200000-1"
       ],
       "value": 9300000,
@@ -1377,8 +1359,8 @@
       "buyer": "ΠΟΛΥΤΕΧΝΕΙΟ ΚΡΗΤΗΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "72260000-5",
-        "72268000-1"
+        "72268000-1",
+        "72260000-5"
       ],
       "value": 102300.02,
       "currency": "EUR",
@@ -1387,16 +1369,12 @@
       "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019555639",
       "relatedActs": [
         {
-          "code": "26REQ019532242",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532242"
+          "code": "26REQ019538758",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019538758"
         },
         {
-          "code": "26REQ019532181",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532181"
-        },
-        {
-          "code": "26REQ019532212",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532212"
+          "code": "26REQ019532374",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532374"
         },
         {
           "code": "26REQ019532151",
@@ -1407,16 +1385,20 @@
           "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532124"
         },
         {
-          "code": "26REQ019538758",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019538758"
+          "code": "26REQ019532242",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532242"
+        },
+        {
+          "code": "26REQ019532212",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532212"
+        },
+        {
+          "code": "26REQ019532181",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532181"
         },
         {
           "code": "26REQ019531861",
           "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019531861"
-        },
-        {
-          "code": "26REQ019532374",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532374"
         }
       ]
     },
@@ -1437,28 +1419,12 @@
       "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019554172",
       "relatedActs": [
         {
-          "code": "26REQ019531861",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019531861"
-        },
-        {
-          "code": "26REQ019538758",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019538758"
-        },
-        {
           "code": "26REQ019532181",
           "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532181"
         },
         {
-          "code": "26REQ019532374",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532374"
-        },
-        {
-          "code": "26REQ019532124",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532124"
-        },
-        {
-          "code": "26REQ019532242",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532242"
+          "code": "26REQ019538758",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019538758"
         },
         {
           "code": "26REQ019532151",
@@ -1467,6 +1433,22 @@
         {
           "code": "26REQ019532212",
           "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532212"
+        },
+        {
+          "code": "26REQ019532374",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532374"
+        },
+        {
+          "code": "26REQ019531861",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019531861"
+        },
+        {
+          "code": "26REQ019532242",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532242"
+        },
+        {
+          "code": "26REQ019532124",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ019532124"
         }
       ]
     },
@@ -1478,10 +1460,10 @@
       "buyerCountry": "GR",
       "cpv": [
         "79415200-8",
-        "72000000-5",
         "79341100-7",
+        "80000000-4",
         "79952000-2",
-        "80000000-4"
+        "72000000-5"
       ],
       "value": 2739120,
       "currency": "EUR",
@@ -1502,10 +1484,10 @@
       "buyer": "ΠΕΡΙΦΕΡΕΙΑ ΘΕΣΣΑΛΙΑΣ",
       "buyerCountry": "GR",
       "cpv": [
-        "80000000-4",
-        "79952000-2",
         "79341100-7",
         "72000000-5",
+        "79952000-2",
+        "80000000-4",
         "79415200-8"
       ],
       "value": 2739120,
@@ -1527,8 +1509,8 @@
       "buyer": "ΥΠΟΥΡΓΕΙΟ ΟΙΚΟΝΟΜΙΚΩΝ",
       "buyerCountry": "GR",
       "cpv": [
-        "79415200-8",
-        "72224000-1"
+        "72224000-1",
+        "79415200-8"
       ],
       "value": 2421100,
       "currency": "EUR",
@@ -1549,8 +1531,8 @@
       "buyer": "ΥΠΟΥΡΓΕΙΟ ΟΙΚΟΝΟΜΙΚΩΝ",
       "buyerCountry": "GR",
       "cpv": [
-        "79415200-8",
-        "72224000-1"
+        "72224000-1",
+        "79415200-8"
       ],
       "value": 2421100,
       "currency": "EUR",
@@ -1592,12 +1574,12 @@
       "buyer": "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ ΑΔΜΗΕ ΑΕ",
       "buyerCountry": "GR",
       "cpv": [
-        "72262000-9",
         "72267100-0",
+        "72512000-7",
         "79111000-5",
+        "72262000-9",
         "79400000-8",
-        "72246000-1",
-        "72512000-7"
+        "72246000-1"
       ],
       "value": 1736000,
       "currency": "EUR",
@@ -1618,9 +1600,9 @@
       "buyer": "ΕΥΔΑΠ ΑΕ",
       "buyerCountry": "GR",
       "cpv": [
+        "72267000-4",
         "48710000-8",
-        "48820000-2",
-        "72267000-4"
+        "48820000-2"
       ],
       "value": 1207760,
       "currency": "EUR",
@@ -1637,8 +1619,8 @@
       "buyerCountry": "GR",
       "cpv": [
         "72267000-4",
-        "48820000-2",
-        "48710000-8"
+        "48710000-8",
+        "48820000-2"
       ],
       "value": 1207760,
       "currency": "EUR",
@@ -1647,42 +1629,113 @@
       "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26PROC019609888",
       "relatedActs": [
         {
-          "code": "26REQ018962021",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018962021"
-        },
-        {
-          "code": "26REQ018961664",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018961664"
-        },
-        {
-          "code": "26REQ018961409",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018961409"
+          "code": "26REQ018962687",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018962687"
         },
         {
           "code": "26REQ018962895",
           "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018962895"
         },
         {
-          "code": "26REQ018961135",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018961135"
+          "code": "26REQ018962021",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018962021"
         },
         {
-          "code": "26REQ018962488",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018962488"
+          "code": "26REQ018961135",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018961135"
         },
         {
           "code": "26REQ018961848",
           "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018961848"
         },
         {
+          "code": "26REQ018961664",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018961664"
+        },
+        {
           "code": "26REQ018962307",
           "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018962307"
         },
         {
-          "code": "26REQ018962687",
-          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018962687"
+          "code": "26REQ018961409",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018961409"
+        },
+        {
+          "code": "26REQ018962488",
+          "url": "https://cerpp.eprocurement.gov.gr/upgkimdis/unprotected/home.xhtml?referenceNumber=26REQ018962488"
         }
       ]
+    },
+    {
+      "id": "TED-567499-2026",
+      "source": "TED",
+      "title": "Greece – Custom software development services – ΔΕΑ-525149",
+      "buyer": "ΑΝΕΞΑΡΤΗΤΟΣ ΔΙΑΧΕΙΡΙΣΤΗΣ ΜΕΤΑΦΟΡΑΣ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ Α.Ε. (ΑΔΜΗΕ Α.Ε.)",
+      "buyerCountry": "GRC",
+      "cpv": [
+        "72230000"
+      ],
+      "value": 2100000,
+      "currency": "EUR",
+      "deadline": null,
+      "publicationDate": "2026-08-17",
+      "url": "https://ted.europa.eu/en/notice/-/detail/567499-2026"
+    },
+    {
+      "id": "TED-566198-2026",
+      "source": "TED",
+      "title": "Greece – IT services: consulting, software development, Internet and support – Ανάπτυξη Κεντρικού Πλαισίου Διακυβέρνησης και Ταξινόμησης Δεδομένων των Υποδομών Κυβερνητικών Υπολογιστικών Νεφών και Εκπόνηση Μελετών Ταξινόμησης Δεδομένων των Πληροφοριακών Συστημάτων που φιλοξενούνται στο Κυβερνητικό Νέφος Δημοσίου Τομέα.",
+      "buyer": "Υπουργείο Ψηφιακής Διακυβέρνησης",
+      "buyerCountry": "GRC",
+      "cpv": [
+        "72000000",
+        "48000000",
+        "72221000",
+        "72220000",
+        "72263000",
+        "72330000",
+        "72322000",
+        "72316000",
+        "80533100"
+      ],
+      "value": 9520362.98,
+      "currency": "EUR",
+      "deadline": null,
+      "publicationDate": "2026-08-17",
+      "url": "https://ted.europa.eu/en/notice/-/detail/566198-2026"
+    },
+    {
+      "id": "TED-569332-2026",
+      "source": "TED",
+      "title": "Greece – General management consultancy services – ΔΙΑΚΗΡΥΞΗ ΔΙΑΓΩΝΙΣΜΟΥ «Παροχή Υπηρεσιών Τεχνικής υποστήριξης για την οργάνωση & διαχείριση του πάγιου εξοπλισμού του ΝΠΔΔ ΕΛΛΗΝΙΚΟ ΚΤΗΜΑΤΟΛΟΓΙΟ»",
+      "buyer": "ΕΛΛΗΝΙΚΟ ΚΤΗΜΑΤΟΛΟΓΙΟ",
+      "buyerCountry": "GRC",
+      "cpv": [
+        "79411000",
+        "72230000"
+      ],
+      "value": 1149170,
+      "currency": "EUR",
+      "deadline": null,
+      "publicationDate": "2026-08-17",
+      "url": "https://ted.europa.eu/en/notice/-/detail/569332-2026"
+    },
+    {
+      "id": "TED-566739-2026",
+      "source": "TED",
+      "title": "Greece – Software development services – Διακήρυξη ανοικτού διαγωνισμού «Υλοποίηση πληροφοριακού συστήματος Ενιαίου Μητρώου Ακινήτων (Ε.Μ.Α.) και υπηρεσίες αξιοποίησης ανοικτών δεδομένων»",
+      "buyer": "ΕΛΛΗΝΙΚΟ ΚΤΗΜΑΤΟΛΟΓΙΟ",
+      "buyerCountry": "GRC",
+      "cpv": [
+        "72262000",
+        "72000000",
+        "80533100"
+      ],
+      "value": 4540900,
+      "currency": "EUR",
+      "deadline": null,
+      "publicationDate": "2026-08-17",
+      "url": "https://ted.europa.eu/en/notice/-/detail/566739-2026"
     },
     {
       "id": "TED-564613-2026",
@@ -2723,22 +2776,6 @@
       "deadline": null,
       "publicationDate": "2026-07-20",
       "url": "https://ted.europa.eu/en/notice/-/detail/500899-2026"
-    },
-    {
-      "id": "TED-495821-2026",
-      "source": "TED",
-      "title": "Greece – Project management consultancy services – Διακήρυξη Ανοικτού Ηλεκτρονικού Διαγωνισμού άνω των ορίων για το υποέργο 3 «Μηχανισμός Υποστήριξης για την αποτελεσματική υλοποίηση του έργου «Αναβάθμιση του εθνικού δικτύου υποδομών τεχνολογίας και έρευνας (ΕΔΥΤΕ)»",
-      "buyer": "Εθνικό Δίκτυο Υποδομών Τεχνολογίας & Έρευνας ΑΕ - ΕΔΥΤΕ ΑΕ",
-      "buyerCountry": "GRC",
-      "cpv": [
-        "72224000",
-        "72000000"
-      ],
-      "value": 560040,
-      "currency": "EUR",
-      "deadline": null,
-      "publicationDate": "2026-07-17",
-      "url": "https://ted.europa.eu/en/notice/-/detail/495821-2026"
     }
   ]
 }
